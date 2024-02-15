@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bi-Directional Dictionary: English-Hazaragi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-brand">Bi-Directional Dictionary</div>
+    </nav>
+    <div class="container">
+        <h1>Discover Words</h1>
+        <select id="direction">
+            <option value="englishToHazaragi">English to Hazaragi</option>
+            <option value="hazaragiToEnglish">Hazaragi to English</option>
+        </select>
+        <input type="text" id="word" placeholder="Enter word...">
+        <button>Translate</button>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+
+<!-- Dark Mode Toggle Button -->
+<div class="nav-right"><div class="theme-toggle">
+    <button id="dark-mode-toggle">Dark Mode</button></div>
+</div>
+
+<div class="form-section">
+    <h2>Contribute or Request Words</h2>
+    <form id="word-form">
+        <input type="text" id="new-word" placeholder="Enter new word or request" required>
+        <textarea id="word-details" placeholder="Details or translation (optional)"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+</body>
+
+
+</html>
