@@ -1,19 +1,48 @@
-
 document.addEventListener('DOMContentLoaded', function() {
     const translations = {
         englishToHazaragi: {
             "Amenorrhea": {
-                translation: "چاردرد",
+                translation: "خشک",
                 pronunciation: "χuʃk"
             },
-            // Add more translations with pronunciations
+            "Health": { 
+                translation: "صحت",
+                pronunciation: "səhat"
+            },
+            "Anemia": {
+                translation: "کم خو",
+                pronunciation: "kʌm χu"
+            },
+            "Bladder": {
+                translation: "شاش دان",
+                pronunciation: "ʃʌʃ dan"
+            },
+            "Cervix": {
+                translation: "دان باچه دو",
+                pronunciation: "kʌm χu"
+            },
         },
         hazaragiToEnglish: {
-            "چاردرد": {
+            "خشک": {
                 translation: "Amenorrhea",
-                pronunciation: "Amenorrhea"
+                pronunciation: "ə-men-ə-REE-ə"
             },
-            // Add more translations with pronunciations
+            "صحت": { 
+                translation: "Health",
+                pronunciation: "health"
+            },
+            "کم خو": { 
+                translation: "Anemia",
+                pronunciation: "Anemia"
+            },
+            "شاش دان": { 
+                translation: "Bladder",
+                pronunciation: "Bladder"
+            },
+            "دان باچه دو": { 
+                translation: "Cervix",
+                pronunciation: "Cervix"
+            }
         }
     };
 
