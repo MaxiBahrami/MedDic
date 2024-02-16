@@ -19,8 +19,8 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             "Cervix": {
                 translation: "دان باچه دو",
-                pronunciation: "kʌm χu"
-            },
+                pronunciation: "dan e bʌʧʌ do"
+            }
         },
         hazaragiToEnglish: {
             "خشک": {
@@ -45,20 +45,33 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     };
-
     function translate() {
         const direction = document.getElementById("direction").value;
-        const word = document.getElementById("word").value.trim().toLowerCase();
+        const word = document.getElementById("word").value.trim().toLowerCase(); // Normalize input to lowercase
         const dictionary = translations[direction];
-        const result = dictionary[word];
-
+        let result = null;
+    
+        // If translating from English to Hazaragi, keys are initially uppercase in your dictionary
+        if (direction === 'englishToHazaragi') {
+            // Convert dictionary keys to lowercase for the lookup
+            const lowerCaseDictionary = Object.keys(dictionary).reduce((acc, key) => {
+                const lowerKey = key.toLowerCase(); // Convert key to lowercase
+                acc[lowerKey] = dictionary[key]; // Assign the original value to the lowercase key
+                return acc;
+            }, {});
+            result = lowerCaseDictionary[word]; // Use the lowercase dictionary for lookup
+        } else {
+            // For Hazaragi to English, you can use the dictionary directly as it's already in lowercase
+            result = dictionary[word];
+        }
+    
         if (result) {
             document.getElementById("result").innerHTML = `Translation: ${result.translation}<br>Pronunciation: ${result.pronunciation}`;
         } else {
             document.getElementById("result").innerText = "Translation not found.";
         }
     }
-
+    
     // Add event listener to the translate button
     document.querySelector('button').addEventListener('click', translate);
 });
