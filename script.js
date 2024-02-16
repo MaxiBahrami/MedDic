@@ -2,16 +2,16 @@
 document.addEventListener('DOMContentLoaded', function() {
     const translations = {
         englishToHazaragi: {
-            "hello": {
-                translation: "سلام",
-                pronunciation: "salaam"
+            "Amenorrhea": {
+                translation: "چاردرد",
+                pronunciation: "χuʃk"
             },
             // Add more translations with pronunciations
         },
         hazaragiToEnglish: {
-            "سلام": {
-                translation: "hello",
-                pronunciation: "hello"
+            "چاردرد": {
+                translation: "Amenorrhea",
+                pronunciation: "Amenorrhea"
             },
             // Add more translations with pronunciations
         }
