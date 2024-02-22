@@ -81,11 +81,18 @@ body {
     margin-top: 20px;
 }
 
-h1 {
-    font-weight: 700;
+/* Style for the font START */
+
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 25px;
     margin-bottom: 20px;
-    color: #007bff;
+    color: grey;
 }
+
+/* Style for the font END */
 
 input, select, button {
     width: 100%;
