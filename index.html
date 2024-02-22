@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>English > Hazaragi medical dictionary</title>
+    <title>English to Hazaragi medical dictionary</title>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./Favicon.PNG" type="image/png" sizes="32x32" />
@@ -55,56 +55,83 @@
         </div>
       </div>
 
-          <div class="container">
-        <h1><center>search for a word</center></h1>
-        <select id="direction">
-            <option value="englishToHazaragi">English to Hazaragi / انگلیسی به هزارگی</option>
-            <option value="hazaragiToEnglish">Hazaragi to English / هزارگی به انگلیسی</option>
-        </select>
-        <input type="text" id="word" placeholder="Enter word...">
-        <button>Translate / ترجمه</button>
-        <div id="result"></div>
-    </div>
+      <div class="container-fluid mt-4">
+        <div class="row">
+            <!-- Search Card on the Left -->
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="text-center">Search for a word</h1>
+                        <select id="direction" class="form-control mb-3">
+                            <option value="englishToHazaragi">English to Hazaragi / انگلیسی به هزارگی</option>
+                            <option value="hazaragiToEnglish">Hazaragi to English / هزارگی به انگلیسی</option>
+                        </select>
+                        <input type="text" id="word" class="form-control mb-3" placeholder="Enter word...">
+                        <button class="btn btn-primary w-100">Translate / ترجمه</button>
+                        <div id="result"></div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- News Card on the Right -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Latest News</h2>
+                        <div class="news-list">
+                            <!-- Placeholder for news items -->
+                            <p class="news-item">News Item 1: <span class="news-content">This is a summary of news item 1.</span></p>
+                            <p class="news-item">News Item 2: <span class="news-content">This is a summary of news item 2.</span></p>
+                            <!-- Add more news items here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Contribution Form Section Below -->
+        <div class="row mt-4">
+          <div class="col">
+              <div class="card">
+                  <div class="card-body">
+                      <h2>Contribute</h2>
+                      <form>
+                          <div class="form-row">
+                              <div class="form-group col-md-6">
+                                  <label for="inputName">Your name please</label>
+                                  <input type="text" class="form-control" id="inputName" placeholder="Your Name">
+                              </div>
+                              <div class="form-group col-md-6">
+                                  <label for="inputEmail">Email</label>
+                                  <input type="email" class="form-control" id="inputEmail" placeholder="Your Email">
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label for="inputCategory">Feedback Category</label>
+                              <select id="inputCategory" class="form-control">
+                                  <option selected>Choose...</option>
+                                  <option>Request: your ideas help us grow</option>
+                                  <option>Problem</option>
+                                  <option>Question</option>
+                                  <option>Other</option>
+                              </select>
+                          </div>
+                          <div class="form-group">
+                              <label for="inputFeedback">Your Feedback</label>
+                              <textarea class="form-control" id="inputFeedback" rows="3"></textarea>
+                          </div>
+                          <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+    
+    <script src="script.js" defer></script>    
     <script src="script.js"></script>
 
-
-<!-- Contribution Starts Here -->
-    
-<section class="container mt-5 mb-5">
-  <h2 class="mb-4">Contribute</h2>
-  <form>
-      <div class="form-row">
-          <div class="form-group col-md-6">
-              <label for="inputName">Your name please</label>
-              <input type of="text" class="form-control" id="inputName" placeholder="Your Name">
-          </div>
-          <div class="form-group col-md-6">
-              <label for="inputEmail">Email</label>
-              <input type="email" class="form-control" id="inputEmail" placeholder="Your Email">
-          </div>
-      </div>
-      <div class="form-group">
-          <label for="inputCategory">Feedback Category</label>
-          <select id="inputCategory" class="form-control">
-              <option selected>Choose...</option>
-              <option>Request: your ideas help us grow</option>
-              <option>Problem</option>
-              <option>Question</option>
-              <option>Other</option>
-          </select>
-      </div>
-      <div class="form-group">
-          <label for="inputFeedback">Your Feedback</label>
-          <textarea class="form-control" id="inputFeedback" rows="3"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
-</section>
-<!-- Contribution End -->
-    
-    
-    <script src="script.js" defer></script>
-</body>
+  </body>
 
 
 </html>
