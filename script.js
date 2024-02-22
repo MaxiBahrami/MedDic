@@ -74,18 +74,30 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         const resultElement = document.getElementById("result");
+        resultElement.innerHTML = ''; // Clear previous results
         if (result) {
-            resultElement.innerHTML = `Translation: ${result.translation}<br>Pronunciation: ${result.pronunciation}`;
+            // Create a container for the translation
+            const translationContainer = document.createElement("div");
+            translationContainer.innerHTML = `Translation: ${result.translation}`;
+            resultElement.appendChild(translationContainer);
+
+            // Create a container for the pronunciation and sound icon
+            const pronunciationContainer = document.createElement("div");
+            pronunciationContainer.innerHTML = `Pronunciation: ${result.pronunciation} `;
 
             if (result.sound) {
                 const audio = new Audio(result.sound);
-                const playButton = document.createElement("button");
-                playButton.textContent = "Play Pronunciation Sound";
-                playButton.onclick = function() { audio.play(); };
-
-                resultElement.appendChild(document.createElement("br")); // Add line break for spacing
-                resultElement.appendChild(playButton);
+                const soundIcon = document.createElement("span"); // Use span or i for icon
+                soundIcon.innerHTML = "🔊"; // Example using emoji, replace with <i class="your-icon-class"></i> if using FontAwesome or similar
+                soundIcon.className = "play-sound-icon"; // Add class for styling the icon
+                soundIcon.style.cursor = "pointer"; // Change cursor to pointer to indicate it's clickable
+                soundIcon.onclick = function() { audio.play(); };
+                
+                pronunciationContainer.appendChild(soundIcon);
             }
+
+            // Append the pronunciation container to the result element
+            resultElement.appendChild(pronunciationContainer);
         } else {
             resultElement.innerText = "Translation not found.";
         }
