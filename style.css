@@ -142,12 +142,36 @@ body.dark-theme button {
     color: #ffffff;
 }
 
-/* Add more dark theme styles as needed */
+.news-item {
+    margin-bottom: 1rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid #eee; /* Light line between news items for separation */
+}
 
-/* Adjustments for better readability in dark mode */
-body.dark-theme #result {
-    background-color: #333333;
-    color: #ffffff;
+.news-content {
+    display: block; /* Display content in block for better readability */
+    color: #333; /* Darker text color for readability */
+}
+
+.card-title {
+    margin-bottom: 1.5rem;
+}
+
+/* Ensures cards have equal height */
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-list {
+    flex: 1;
+    overflow-y: auto; /* Allows scrolling within the card if many news items */
 }
 
 /* Styling for the form section */
