@@ -3,91 +3,105 @@ document.addEventListener('DOMContentLoaded', function() {
         englishToHazaragi: {
             "Amenorrhea": {
                 translation: "خشک",
-                pronunciation: "χuʃk"
+                pronunciation: "χuʃk",
+                sound: "./pronunciation/Amenorrhea.mp3"
             },
             "Health": { 
                 translation: "صحت",
                 pronunciation: "səhat"
+                // Assuming sound URL will be added here
             },
             "Anemia": {
                 translation: "کم خو",
                 pronunciation: "kʌm χu"
+                // Assuming sound URL will be added here
             },
             "Bladder": {
                 translation: "شاش دان",
                 pronunciation: "ʃʌʃ dan"
+                // Assuming sound URL will be added here
             },
             "Cervix": {
                 translation: "دان باچه دو",
                 pronunciation: "dan e bʌʧʌ do"
+                // Assuming sound URL will be added here
             }
         },
         hazaragiToEnglish: {
             "خشک": {
                 translation: "Amenorrhea",
                 pronunciation: "ə-men-ə-REE-ə"
+                // Assuming sound URL will be added here
             },
             "صحت": { 
                 translation: "Health",
                 pronunciation: "health"
+                // Assuming sound URL will be added here
             },
             "کم خو": { 
                 translation: "Anemia",
                 pronunciation: "Anemia"
+                // Assuming sound URL will be added here
             },
             "شاش دان": { 
                 translation: "Bladder",
                 pronunciation: "Bladder"
+                // Assuming sound URL will be added here
             },
             "دان باچه دو": { 
                 translation: "Cervix",
                 pronunciation: "Cervix"
+                // Assuming sound URL will be added here
             }
         }
     };
+
     function translate() {
         const direction = document.getElementById("direction").value;
-        const word = document.getElementById("word").value.trim().toLowerCase(); // Normalize input to lowercase
+        const word = document.getElementById("word").value.trim().toLowerCase();
         const dictionary = translations[direction];
         let result = null;
-    
-        // If translating from English to Hazaragi, keys are initially uppercase in your dictionary
+
         if (direction === 'englishToHazaragi') {
-            // Convert dictionary keys to lowercase for the lookup
             const lowerCaseDictionary = Object.keys(dictionary).reduce((acc, key) => {
-                const lowerKey = key.toLowerCase(); // Convert key to lowercase
-                acc[lowerKey] = dictionary[key]; // Assign the original value to the lowercase key
+                const lowerKey = key.toLowerCase();
+                acc[lowerKey] = dictionary[key];
                 return acc;
             }, {});
-            result = lowerCaseDictionary[word]; // Use the lowercase dictionary for lookup
+            result = lowerCaseDictionary[word];
         } else {
-            // For Hazaragi to English, you can use the dictionary directly as it's already in lowercase
             result = dictionary[word];
         }
-    
+
+        const resultElement = document.getElementById("result");
         if (result) {
-            document.getElementById("result").innerHTML = `Translation: ${result.translation}<br>Pronunciation: ${result.pronunciation}`;
+            resultElement.innerHTML = `Translation: ${result.translation}<br>Pronunciation: ${result.pronunciation}`;
+
+            if (result.sound) {
+                const audio = new Audio(result.sound);
+                const playButton = document.createElement("button");
+                playButton.textContent = "Play Pronunciation Sound";
+                playButton.onclick = function() { audio.play(); };
+
+                resultElement.appendChild(document.createElement("br")); // Add line break for spacing
+                resultElement.appendChild(playButton);
+            }
         } else {
-            document.getElementById("result").innerText = "Translation not found.";
+            resultElement.innerText = "Translation not found.";
         }
     }
-    
-    // Add event listener to the translate button
-    document.querySelector('button').addEventListener('click', translate);
-});
 
-document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('button').addEventListener('click', translate);
+
     const toggle = document.getElementById('dark-mode-toggle');
     toggle.addEventListener('click', function() {
         document.body.classList.toggle('dark-theme');
-        // You can store the user's theme preference here using localStorage
+        // Here, you can store the user's theme preference using localStorage, if required
     });
-});
 
-document.getElementById('word-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    // Here you would handle the form submission, e.g., sending data to a server
-    alert('Thank you for your contribution!');
-    // Reset form after submission
-    document.getElementById('word-form').reset();
+    document.getElementById('word-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Thank you for your contribution!');
+        document.getElementById('word-form').reset();
+    });
 });
