@@ -283,6 +283,7 @@ body.dark-theme .news-item {
 footer {
 	margin: 20px;
   margin-left: 0;
+	margin-right: 0;
   margin-bottom: 0;
 	padding:0;
 	box-sizing: border-box;
