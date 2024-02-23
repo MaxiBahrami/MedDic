@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 /* Reset and Basic Styling */
 body, h1, h2, h3, p {
@@ -106,12 +107,13 @@ body {
 /* Style for the font START */
 
 .pacifico-regular {
-    font-family: "Pacifico", cursive;
+    font-family: "Anton", sans-serif;
     font-weight: 300;
     font-style: normal;
     font-size: 25px;
     margin-bottom: 20px;
-    color: grey;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Horizontal offset, Vertical offset, Blur radius, Color */
 }
 
 /* Style for the font END */
