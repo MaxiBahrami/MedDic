@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 sound: "./pronunciation/Amenorrhea.mp3"
             },
             "Health": { 
-                translation: "صحت",
+                translation: "صت",
                 pronunciation: "səhat"
                 // Assuming sound URL will be added here
             },
