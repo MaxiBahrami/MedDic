@@ -17,7 +17,7 @@ body, h1, h2, h3, p {
 }
 
 body {
-    background: linear-gradient(to right, #fdfdfe, #fafaf5);
+    background: linear-gradient(to right, grey, lightgrey);
     transition: all 0.3s ease;
 }
 
