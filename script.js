@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 sound: "./pronunciation/Amenorrhea.mp3"
             },
             "Health": { 
-                translation: "صت",
+                translation: "صحت",
                 pronunciation: "səhat"
                 // Assuming sound URL will be added here
             },
@@ -117,3 +117,22 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('word-form').reset();
     });
 });
+
+self.addEventListener('install', (e) => {
+    e.waitUntil(
+      caches.open('my-app-store').then((cache) => cache.addAll([
+        '/',
+        '/index.html',
+        '/styles.css',
+        '/script.js',
+        // add other assets you want to cache
+      ])),
+    );
+  });
+  
+  self.addEventListener('fetch', (e) => {
+    e.respondWith(
+      caches.match(e.request).then((response) => response || fetch(e.request)),
+    );
+  });
+  
