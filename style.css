@@ -139,7 +139,7 @@ a.active, a:hover {
 
   /* Ensure main content starts below the fixed navbar */
   body {
-    padding-top: 100px; /* Same height as the nav bar */
+    padding-top: 80px; /* Same height as the nav bar */
   }
 }
 
