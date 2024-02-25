@@ -56,6 +56,31 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     };
 
+    function incrementSearchCount(word) {
+        const count = localStorage.getItem(word) || 0;
+        localStorage.setItem(word, parseInt(count) + 1);
+    }
+
+    function updateMostSearchedWords() {
+        const mostSearchedWordsContainer = document.getElementById('most-searched-words');
+        mostSearchedWordsContainer.innerHTML = ''; // Clear previous content
+
+        const words = Object.keys(translations.englishToHazaragi).concat(Object.keys(translations.hazaragiToEnglish));
+        const wordCounts = words.map(word => ({
+            word,
+            count: parseInt(localStorage.getItem(word.toLowerCase()) || 0)
+        })).sort((a, b) => b.count - a.count).slice(0, 3);
+
+        wordCounts.forEach(item => {
+            if (item.count > 0) { // Only display words that have been searched
+                const wordElement = document.createElement('p');
+                wordElement.className = 'news-item';
+                wordElement.innerHTML = `${item.word} <span class="news-content">Searched ${item.count} times</span>`;
+                mostSearchedWordsContainer.appendChild(wordElement);
+            }
+        });
+    }
+
     function translate() {
         const direction = document.getElementById("direction").value;
         const word = document.getElementById("word").value.trim().toLowerCase();
@@ -76,63 +101,36 @@ document.addEventListener('DOMContentLoaded', function() {
         const resultElement = document.getElementById("result");
         resultElement.innerHTML = ''; // Clear previous results
         if (result) {
-            // Create a container for the translation
+            // Display translation and pronunciation
             const translationContainer = document.createElement("div");
             translationContainer.innerHTML = `Translation: ${result.translation}`;
             resultElement.appendChild(translationContainer);
 
-            // Create a container for the pronunciation and sound icon
             const pronunciationContainer = document.createElement("div");
             pronunciationContainer.innerHTML = `Pronunciation: ${result.pronunciation} `;
 
             if (result.sound) {
                 const audio = new Audio(result.sound);
-                const soundIcon = document.createElement("span"); // Use span or i for icon
-                soundIcon.innerHTML = "🔊"; // Example using emoji, replace with <i class="your-icon-class"></i> if using FontAwesome or similar
-                soundIcon.className = "play-sound-icon"; // Add class for styling the icon
-                soundIcon.style.cursor = "pointer"; // Change cursor to pointer to indicate it's clickable
+                const soundIcon = document.createElement("span");
+                soundIcon.innerHTML = "🔊";
+                soundIcon.className = "play-sound-icon";
+                soundIcon.style.cursor = "pointer";
                 soundIcon.onclick = function() { audio.play(); };
-                
                 pronunciationContainer.appendChild(soundIcon);
             }
 
-            // Append the pronunciation container to the result element
             resultElement.appendChild(pronunciationContainer);
         } else {
             resultElement.innerText = "Translation not found.";
         }
+
+        // Increment search count and update most searched words display
+        incrementSearchCount(word.toLowerCase());
+        updateMostSearchedWords();
     }
 
     document.querySelector('button').addEventListener('click', translate);
 
-    const toggle = document.getElementById('dark-mode-toggle');
-    toggle.addEventListener('click', function() {
-        document.body.classList.toggle('dark-theme');
-        // Here, you can store the user's theme preference using localStorage, if required
-    });
-
-    document.getElementById('word-form').addEventListener('submit', function(event) {
-        event.preventDefault();
-        alert('Thank you for your contribution!');
-        document.getElementById('word-form').reset();
-    });
+    // Initialize most searched words display on page load
+    updateMostSearchedWords();
 });
-
-self.addEventListener('install', (e) => {
-    e.waitUntil(
-      caches.open('my-app-store').then((cache) => cache.addAll([
-        '/',
-        '/index.html',
-        '/styles.css',
-        '/script.js',
-        // add other assets you want to cache
-      ])),
-    );
-  });
-  
-  self.addEventListener('fetch', (e) => {
-    e.respondWith(
-      caches.match(e.request).then((response) => response || fetch(e.request)),
-    );
-  });
-  
