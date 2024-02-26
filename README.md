@@ -4,4 +4,4 @@ I also upload android version.
 Words will be added and updated. 
 
 You can access the dictionary via this link:
-hazaramed.netlify.app
+https://hazaramed.netlify.app/
