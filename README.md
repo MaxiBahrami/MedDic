@@ -1,4 +1,7 @@
-This is the template for Hazaramed dictionary. 
-I used JS here for the source of my dictionary but in future I will update this with a SQL database. 
+I used JS for storing words, translation and more 
+It is ready to use and installable on phones. 
+I also upload android version.
+Words will be added and updated. 
 
-                    *** THIS PROJECT IS UNDER DEVELOPEMENT ***
+You can access the dictionary via this link:
+hazaramed.netlify.app
