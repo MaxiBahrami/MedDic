@@ -9,105 +9,88 @@ document.addEventListener('DOMContentLoaded', function() {
             "Health": { 
                 translation: "صحت",
                 pronunciation: "səhat"
-                // Assuming sound URL will be added here
             },
             "Anemia": {
                 translation: "کم خو",
                 pronunciation: "kʌm χu"
-                // Assuming sound URL will be added here
             },
             "Bladder": {
                 translation: "شاش دان",
                 pronunciation: "ʃʌʃ dan"
-                // Assuming sound URL will be added here
             },
             "Cervix": {
                 translation: "دان باچه دو",
                 pronunciation: "dan e bʌʧʌ do"
-                // Assuming sound URL will be added here
             }
         },
         hazaragiToEnglish: {
             "خشک": {
                 translation: "Amenorrhea",
                 pronunciation: "ə-men-ə-REE-ə"
-                // Assuming sound URL will be added here
             },
             "صحت": { 
                 translation: "Health",
                 pronunciation: "health"
-                // Assuming sound URL will be added here
             },
             "کم خو": { 
                 translation: "Anemia",
                 pronunciation: "Anemia"
-                // Assuming sound URL will be added here
             },
             "شاش دان": { 
                 translation: "Bladder",
                 pronunciation: "Bladder"
-                // Assuming sound URL will be added here
             },
             "دان باچه دو": { 
                 translation: "Cervix",
                 pronunciation: "Cervix"
-                // Assuming sound URL will be added here
             }
         }
     };
 
-    function incrementSearchCount(word) {
-        const count = localStorage.getItem(word) || 0;
-        localStorage.setItem(word, parseInt(count) + 1);
-    }
-
-    function updateMostSearchedWords() {
-        const mostSearchedWordsContainer = document.getElementById('most-searched-words');
-        mostSearchedWordsContainer.innerHTML = ''; // Clear previous content
-
-        const words = Object.keys(translations.englishToHazaragi).concat(Object.keys(translations.hazaragiToEnglish));
-        const wordCounts = words.map(word => ({
-            word,
-            count: parseInt(localStorage.getItem(word.toLowerCase()) || 0)
-        })).sort((a, b) => b.count - a.count).slice(0, 3);
-
-        wordCounts.forEach(item => {
-            if (item.count > 0) { // Only display words that have been searched
-                const wordElement = document.createElement('p');
-                wordElement.className = 'news-item';
-                wordElement.innerHTML = `${item.word} <span class="news-content">Searched ${item.count} times</span>`;
-                mostSearchedWordsContainer.appendChild(wordElement);
-            }
-        });
-    }
-
-    function translate() {
+    document.getElementById('word').addEventListener('input', function() {
+        const query = this.value.trim().toLowerCase();
         const direction = document.getElementById("direction").value;
-        const word = document.getElementById("word").value.trim().toLowerCase();
         const dictionary = translations[direction];
-        let result = null;
+        let matches = Object.keys(dictionary).filter(key => key.toLowerCase().startsWith(query));
 
-        if (direction === 'englishToHazaragi') {
-            const lowerCaseDictionary = Object.keys(dictionary).reduce((acc, key) => {
-                const lowerKey = key.toLowerCase();
-                acc[lowerKey] = dictionary[key];
-                return acc;
-            }, {});
-            result = lowerCaseDictionary[word];
+        const wordList = document.getElementById('wordList');
+        if (query !== "" && matches.length > 0) {
+            wordList.innerHTML = matches.map(key => `<a href="#" class="list-group-item list-group-item-action">${key}</a>`).join('');
+            wordList.style.display = 'block';
         } else {
-            result = dictionary[word];
+            wordList.style.display = 'none';
+            wordList.innerHTML = '';
         }
+    });
 
+    document.getElementById('wordList').addEventListener('click', function(e) {
+        if (e.target.tagName === 'A') {
+            document.getElementById('word').value = e.target.textContent;
+            translate(e.target.textContent); // Pass the actual word content
+            this.style.display = 'none';
+        }
+    });
+
+    document.querySelector('button').addEventListener('click', function() {
+        translate(document.getElementById('word').value);
+    });
+
+    function translate(inputWord) {
+        const direction = document.getElementById("direction").value;
+        const dictionary = translations[direction];
         const resultElement = document.getElementById("result");
         resultElement.innerHTML = ''; // Clear previous results
+
+        // Adjust case based on dictionary structure
+        const result = dictionary[inputWord] || dictionary[inputWord.toLowerCase()] || dictionary[inputWord.toUpperCase()];
+
         if (result) {
-            // Display translation and pronunciation
             const translationContainer = document.createElement("div");
             translationContainer.innerHTML = `Translation: ${result.translation}`;
             resultElement.appendChild(translationContainer);
 
             const pronunciationContainer = document.createElement("div");
-            pronunciationContainer.innerHTML = `Pronunciation: ${result.pronunciation} `;
+            pronunciationContainer.innerHTML = `Pronunciation: ${result.pronunciation}`;
 
             if (result.sound) {
                 const audio = new Audio(result.sound);
@@ -123,14 +106,5 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             resultElement.innerText = "Translation not found.";
         }
-
-        // Increment search count and update most searched words display
-        incrementSearchCount(word.toLowerCase());
-        updateMostSearchedWords();
     }
-
-    document.querySelector('button').addEventListener('click', translate);
-
-    // Initialize most searched words display on page load
-    updateMostSearchedWords();
 });
