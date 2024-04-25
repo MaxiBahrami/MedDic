@@ -1,79 +1,103 @@
 document.addEventListener("DOMContentLoaded", function () {
   const translations = {
     englishToHazaragi: {
+                                                    // A
       "Abdominal pain": {
         translation: "کَوره دَرد",
         pronunciation: "kʌwrʌ dʌrd",
-        sound: "audio/abdominal_pain.mp3",
+        sound: "./audio/Voice 001.m4a",
       },
       "Abdominal Pain With Diarrhea": {
         translation: "پِیچ دِیدُو",
         pronunciation: "piʧ dido",
+        sound: "./audio/Voice 002.m4a",
       },
       Acne: {
         translation: "چقچی",
         pronunciation: "ʧʌqʧi",
+        sound: "./audio/Voice 003.m4a",
       },
       "Active labor": {
         translation: "چاردرد",
         pronunciation: "ʧar dʌrd",
+        sound: "./audio/Voice 004.m4a",
       },
       Allergen: {
         translation: "سرخ بوده",
         pronunciation: "sorχ budʌ",
+        sound: "./audio/Voice 005.m4a",
       },
       "Allergic conjunctivitis": {
         translation: "نزله",
         pronunciation: "nʌzlʌ",
+        sound: "./audio/Voice 006.m4a",
       },
       Amenorrhea: {
         translation: "خشک",
         pronunciation: "χuʃk",
+        sound: "./audio/Voice 007.m4a",
       },
       "Amniotic fluid": {
         translation: "آو نیلغه",
         pronunciation: "aw e nilʁʌ",
+        sound: "./audio/Voice 008.m4a",
       },
       "Amniotic sac rapture": {
         translation: "قوعنگ پاره شدو",
         pronunciation: "quʌnʌk parʌ ʃudʌn",
+        sound: "./audio/Voice 009.m4a",
       },
       Anemia: {
         translation: "کم خو",
         pronunciation: "kʌm χu",
+        sound: "./audio/Voice 010.m4a",
       },
       Anesthesia: {
         translation: "کرختی",
         pronunciation: "kʌrʌχti",
+        sound: "./audio/Voice 011.m4a",
       },
       Ankle: {
         translation: "شیغی پای",
         pronunciation: "ʃiʁʌj e paj",
+        sound: "./audio/Voice 012.m4a",
       },
+
+                                              // B
       Bladder: {
         translation: "شاش دان",
         pronunciation: "ʃʌʃ dan",
+        sound: "./audio/Voice 014.m4a",
       },
       "Bleeding during pregnancy": {
         translation: "گل وازشدو",
         pronunciation: "gul vaz ʃudo",
+        sound: "./audio/Voice 015.m4a",
       },
       Blister: {
         translation: "اَولِیله",
         pronunciation: "ʌwlilʌ",
+        sound: "./audio/Voice 016.m4a",
       },
       Bloating: {
         translation: "چمبه",
         pronunciation: "ʧʌmbʌ",
+        sound: "./audio/Voice 018.m4a",
       },
       "Blurred vision": {
         translation: "چرچرشدو",
         pronunciation: "ʧʌrʧʌr ʃudo",
+        sound: "./audio/Voice 019.m4a",
       },
       "Body Ache": {
         translation: "جان ‌دَردِی",
         pronunciation: "ʤan dʌrdi",
+        sound: "./audio/Voice 020.m4a",
       },
+
+
+
+
       "Bone dislocation (in hand or foot)": {
         translation: "بُوجُلَک‌ شُدُو",
         pronunciation: "buʤolʌk ʃudo",
@@ -2708,6 +2732,29 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  document.getElementById("word").addEventListener("input", function () {
+    const query = this.value.trim().toLowerCase();
+    const direction = document.getElementById("direction").value;
+    const dictionary = translations[direction];
+    let matches = Object.keys(dictionary).filter((key) =>
+      key.toLowerCase().startsWith(query)
+    );
+
+    const wordList = document.getElementById("wordList");
+    if (query !== "" && matches.length > 0) {
+      wordList.innerHTML = matches
+        .map(
+          (key) =>
+            `<a href="#" class="list-group-item list-group-item-action">${key}</a>`
+        )
+        .join("");
+      wordList.style.display = "block";
+    } else {
+      wordList.style.display = "none";
+      wordList.innerHTML = "";
+    }
+  });
+
   document.getElementById("wordList").addEventListener("click", function (e) {
     if (e.target.tagName === "A") {
       document.getElementById("word").value = e.target.textContent;
@@ -2732,29 +2779,44 @@ document.addEventListener("DOMContentLoaded", function () {
       dictionary[inputWord.toUpperCase()];
 
     if (result) {
-      const definitionContainer = document.createElement("div");
-      definitionContainer.innerHTML = `<b>Translation:</b> ${result.translation}<br><b>Pronunciation:</b> ${result.pronunciation}<br><b>Definition:</b> ${result.definition}`;
-      resultElement.appendChild(definitionContainer);
+      if (result.definitions) {
+        result.definitions.forEach((def) => {
+          appendDefinition(resultElement, def);
+        });
+      } else {
+        appendDefinition(resultElement, result);
+      }
 
       if (result.sound) {
-        const audioContainer = document.createElement("div");
-        audioContainer.classList.add("audio-container");
-        const audioLabel = document.createElement("span");
-        audioLabel.innerHTML = "<b>Listen / تلغظ :</b>";
-        audioLabel.classList.add("audio-label");
-        audioContainer.appendChild(audioLabel);
-        appendAudioPlayer(audioContainer, result.sound);
-        definitionContainer.appendChild(audioContainer);
+        appendAudio(resultElement, result.sound);
       }
     } else {
       resultElement.innerText = "Translation not found.";
     }
   }
 
-  function appendAudioPlayer(container, src) {
+  function appendDefinition(container, definition) {
+    const definitionContainer = document.createElement("div");
+    definitionContainer.innerHTML = `<b>Translation:</b> ${definition.translation}<br><b>Pronunciation:</b> ${definition.pronunciation}`;
+    if (definition.definition) {
+      definitionContainer.innerHTML += `<br><b>Definition:</b> ${definition.definition}`;
+    }
+    container.appendChild(definitionContainer);
+  }
+
+  function appendAudio(container, src) {
+    const audioContainer = document.createElement("div");
+    audioContainer.classList.add("audio-container");
+    const audioLabel = document.createElement("span");
+    audioLabel.innerHTML = "<b>Listen / تلغظ :</b>";
+    audioLabel.classList.add("audio-label");
+    audioContainer.appendChild(audioLabel);
+
     const audio = document.createElement('audio');
     audio.controls = true;
     audio.src = src;
-    container.appendChild(audio);
+    audioContainer.appendChild(audio);
+
+    container.appendChild(audioContainer);
   }
-})();
+});
