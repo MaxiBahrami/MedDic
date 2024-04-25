@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css" rel="stylesheet">
+    <meta charset="UTF-16">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English to Hazaragi medical dictionary</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./Favicon.PNG" type="image/png" sizes="32x32" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vazir-font/dist/font-face.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="manifest" href="/manifest.json">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+       body {
+            background-color: #F0F0F5;
+            font-family: 'Nunito', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header {
+            background-color: #4A235A;
+            color: #EDE7F6;
+            padding: 20px 0;
+            border-radius: 0 0 25px 25px;
+            margin-bottom: 40px;
+        }
+        .header h1 {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            font-size: 2.5em;
+        }
+        .content {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+            text-align: left;
+            direction: ltr;
+            margin: auto;
+            margin-bottom: 20px;
+            width: 85%; /* Reduced width */
+            max-width: 800px; /* Maximum width */
+        }
+        .content.rtl {
+            text-align: right;
+            direction: rtl;
+            font-family: 'Vazir', sans-serif;
+        }
+        .btn-custom {
+            width: auto; /* Dynamic width */
+            padding: 10px 20px; /* Larger padding for better touch interaction */
+            border-radius: 25px; /* Rounded corners */
+            font-size: 18px; /* Larger font size */
+            font-weight: bold;
+            margin: 10px; /* Uniform margin */
+            transition: background-color 0.4s, color 0.4s, box-shadow 0.3s;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow */
+        }
+        .btn-light {
+            background-color: #B39DDB;
+            color: #4A235A;
+            border: none; /* No border */
+        }
+        .btn-dark {
+            background-color: #4A235A;
+            color: #EDE7F6;
+            border: none;
+        }
+        .btn-light:hover, .btn-light:focus, .btn-dark:hover, .btn-dark:focus {
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* Enhanced shadow on hover/focus */
+        }
+        .text-center {
+            margin-top: 40px; /* Adding space from the navbar */
+        }
+        @media (max-width: 768px) {
+            .text-center {
+                margin-top: 80px; /* Increased space for mobile devices */
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <label class="logo">HazaraMed</label>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="./WordList.html">Word list</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+      
+    
+
+                <div class="text-center mb-5">
+                    <button class="btn btn-light btn-custom" onclick="showEnglish()">English</button>
+                    <button class="btn btn-dark btn-custom" onclick="showHazaragi()">هزارگی</button>
+                </div>
+                <div class="content" id="englishContent" style="display:none;">
+                    <p>The purpose of this collection is to create optimal communication between health care providers and Hazaragi language patients who either recently arrived in Canada or are more comfortable expressing their health issues in Hazaragi language.</p>
+                    <p>Given the fact that the number of Hazara immigrants in Canada is increasing, there is a need for both health care providers and medical interpreters to be aware of the specific dialect of the Hazara population in the context of women's and children's health.</p>
+                    <p>We hope this collection will serve as a valuable resource for improving health care outcomes and fostering mutual understanding and respect in Canada's diverse communities.</p>
+                    <p>We also hope that this collection will empower health care professionals, translators, and members of the Hazara community alike to conduct health care interactions with confidence, compassion, and cultural sensitivity. Together, we can ensure equitable access to health care services and support the health and well-being of all people, regardless of their linguistic or cultural background.</p>
+                </div>
+                <div class="content rtl" id="hazaragiContent">
+                    <p>هدف این مجموعه ایجاد ارتباطه بهینه بین ارائه دهنده گان مراقبت های بهداشتی و بیماران هزارگی زبانی می باشد که یا اخیرا وارد کانادا شده اند و یا در بیان مسائل صحی خود به زبان هزاره گی، راحت تر هستند.</p>
+                    <p>با توجه به این واقعیت که تعداد مهاجران هزاره در کانادا در حال افزایش است، نیاز است که هم ارائه دهنده گان خدمات صحی و هم مترجمان طبی از گویش محلی خاص مردم هزاره در زمینه صحت زنان و اطفال آگاه باشند.</p>
+                    <p>امیدوار هستیم که این کتاب راهنما به‌عنوان منبعی ارزشمند برای بهبود نتایج مراقبت‌های بهداشتی و تقویت درک و احترام متقابل در جوامع مختلف کانادا عمل نماید.</p>
+                    <p>همچنین امیدواریم که این کتاب راهنما به متخصصان مراقبت های صحی، مترجمان و اعضای جامعه هزاره به طور یکسان قدرت دهد تا تعاملات مراقبت های صحی را با اطمینان، دلسوزی و حساسیت فرهنگی انجام دهند.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<footer class="footer">
+    <div class="container_footer">
+      <div class="row_footer">
+        <div class="footer-col">
+          <h4> Links</h4>
+          <ul class="ul_footer">
+            <li><a href="#">about HazaraMed</a></li>
+            <li><a href="#">Support us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow HazaraMed</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/hazara.med?igsh=MTRvdzBia2ZiaWtpeA=="><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/MaxiBahrami"><i class="fab fa-github"></i></a>
+          
+          </div>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 70px; margin-bottom: 10px; font-size: 16px; color: #ffffff; font-weight: bold;">
+        © 2024 All Rights Reserved <br>Designed by <a href="https://www.instagram.com/maximilian_bahrami" style="color: #ffffff; text-decoration: underline;" target="_blank">Maximilian Bahrami</a>
+      </div>    
+    </div>
+  </footer>
+    <script>
+        function showEnglish() {
+            document.getElementById('englishContent').style.display = 'block';
+            document.getElementById('hazaragiContent').style.display = 'none';
+        }
+
+        function showHazaragi() {
+            document.getElementById('englishContent').style.display = 'none';
+            document.getElementById('hazaragiContent').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
