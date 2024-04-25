@@ -655,3 +655,37 @@ footer {
 /* ------------------------------------------------------------------ */
                           /* Footer Style END */
 /* ------------------------------------------------------------------ */
+
+
+.translation-container {
+  font-family: 'Noto Sans', sans-serif; /* Default font for English */
+}
+
+@font-face {
+  font-family: 'Vazir';
+  src: url('./font/vazir-font-v16.1.0/Vazir-Light.woff2') format('truetype');
+}
+
+.translation-entry {
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 1.5; /* Improved line spacing for readability */
+}
+
+.audio-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.pronunciation-label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #555; /* Slightly lighter font color for a vintage feel */
+}
+
+.audio-player {
+  width: 60%;
+  outline: none; /* Removes focus outline for a cleaner look */
+}
