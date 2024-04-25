@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "Abdominal pain": {
         translation: "کَوره دَرد",
         pronunciation: "kʌwrʌ dʌrd",
+        sound: "audio/abdominal_pain.mp3",
       },
       "Abdominal Pain With Diarrhea": {
         translation: "پِیچ دِیدُو",
@@ -1215,36 +1216,60 @@ document.addEventListener("DOMContentLoaded", function () {
     const dictionary = translations[direction];
     const resultElement = document.getElementById("result");
     resultElement.innerHTML = ""; // Clear previous results
-
-    // Adjust case based on dictionary structure
-    let result =
+  
+    let result = 
       dictionary[inputWord] ||
       dictionary[inputWord.toLowerCase()] ||
       dictionary[inputWord.toUpperCase()];
-
+  
     if (result) {
-      // Check if the result is an array (as in the case of "Cold")
       if (Array.isArray(result.definitions)) {
         result.definitions.forEach((def) => {
           const definitionContainer = document.createElement("div");
-          definitionContainer.innerHTML = `Translation: ${def.translation}<br>Pronunciation: ${def.pronunciation}`;
+          definitionContainer.innerHTML = `<b>Translation:</b> ${def.translation}<br><b>Pronunciation:</b> ${def.pronunciation}`;
           if (def.partOfSpeech) {
             definitionContainer.innerHTML += `<br>Part of Speech: ${def.partOfSpeech}`;
           }
           resultElement.appendChild(definitionContainer);
+  
+          if (def.sound) {
+            const audioContainer = document.createElement("div");
+            audioContainer.classList.add("audio-container");
+            const audioLabel = document.createElement("span");
+            audioLabel.innerHTML = "Listen:";
+            audioLabel.classList.add("audio-label");
+            audioContainer.appendChild(audioLabel);
+            appendAudioPlayer(audioContainer, def.sound);
+            definitionContainer.appendChild(audioContainer);
+          }
         });
       } else {
-        // Handle single definition entries
         const translationContainer = document.createElement("div");
-        translationContainer.innerHTML = `Translation: ${result.translation}`;
+        translationContainer.innerHTML = `<b>Translation:</b> ${result.translation}<br><b>Pronunciation:</b> ${result.pronunciation}`;
         resultElement.appendChild(translationContainer);
-
-        const pronunciationContainer = document.createElement("div");
-        pronunciationContainer.innerHTML = `Pronunciation: ${result.pronunciation}`;
-        resultElement.appendChild(pronunciationContainer);
+  
+        if (result.sound) {
+          const audioContainer = document.createElement("div");
+          audioContainer.classList.add("audio-container");
+          const audioLabel = document.createElement("span");
+          audioLabel.innerHTML = "<b>Listen / تلغظ :</b>";
+          audioLabel.classList.add("audio-label");
+          audioContainer.appendChild(audioLabel);
+          appendAudioPlayer(audioContainer, result.sound);
+          translationContainer.appendChild(audioContainer);
+        }
       }
     } else {
       resultElement.innerText = "Translation not found.";
     }
   }
-});
+  
+  function appendAudioPlayer(container, src) {
+    const audio = document.createElement('audio');
+    audio.controls = true;
+    audio.src = src;
+    
+    container.appendChild(audio);
+  }
+}
+  )();
