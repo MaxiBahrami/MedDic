@@ -1137,42 +1137,1551 @@ document.addEventListener("DOMContentLoaded", function () {
     },
 
     hazaragiToEnglish: {
-      خشک: {
-        translation: "Amenorrhea",
-        pronunciation: "ə-men-ə-REE-ə",
+      "آتِیشَک‌دَنَه": {
+        "translation": "Itchy blister",
+        "pronunciation": "atiʃʌk danʌ",
+        "definition": "دمل عفونی و خارش‌دار که بر بدن و سر و صورت کودکان برآید"
       },
-      صحت: {
-        translation: "Health",
-        pronunciation: "health",
+      "استخان پودَه گی": {
+        "translation": "Osteoporosis",
+        "pronunciation": "ostoχan pudʌgi",
+        "definition": "پوکی استخوان"
+      },
+      "اشپیش": {
+        "translation": "Lice",
+        "pronunciation": "iʃpiʃ",
+        "definition": "شپش"
+      },
+      "افتو بورده گی": {
+        "translation": "Sunburn",
+        "pronunciation": "ʌftʌw burdʌgi",
+        "definition": "آفتاب سوختگی"
+      },
+      "آل برده گی": {
+        "translation": "Faint after child birth",
+        "pronunciation": "al bordʌgi",
+        "definition": "بی هوشی پس از ولادت"
+      },
+      "آلجَس‌بُرده": {
+        "translation": "Sever sickness",
+        "pronunciation": "ʌlʤʌs bordʌ",
+        "definition": "نوعی بیماری در کودکان که قابل درمان نبوده است"
+      },
+      "آلُوخ": {
+        "translation": "Mentally retarded",
+        "pronunciation": "aloχ",
+        "definition": "عقب مانده ذهنی"
+      },
+      "امَس": {
+        "translation": "Edema",
+        "pronunciation": "ʌmʌs",
+        "definition": "آماس"
+      },
+      "امس کتوگ": {
+        "translation": "Tonsillitis",
+        "pronunciation": "ʌmʌs e kʌtug",
+        "definition": "التهاب تانسل"
+      },
+      "آو بِنگَگ": {
+        "translation": "Runny nose",
+        "pronunciation": "aw benigʌk",
+        "definition": "ریزش آب بینی"
+      },
+      "آو نیلغه": {
+        "translation": "Amniotic fluid",
+        "pronunciation": "aw e nilʁʌ",
+        "definition": "کیسه آب"
+      },
+      "آواز افتدگی": {
+        "translation": "Croup",
+        "pronunciation": "avaz oftedgi",
+        "definition": "خروسک شدن صدا"
+      },
+      "اوقره دردی": {
+        "translation": "Eye pain",
+        "pronunciation": "uqrʌ dʌrdi",
+        "definition": "چشم درد"
+      },
+      "آوله": {
+        "translation": "Cyst",
+        "pronunciation": "awlʌ",
+        "definition": "کیست"
+      },
+      "اوله ی شرمگاهی": {
+        "translation": "Genital warts, genital herpes",
+        "pronunciation": "ʌwlʌj e ʃʌrmgahi",
+        "definition": "زگیل شرمگاهی، هرپس شرمگاهی"
+      },
+      "اولیله": {
+        "translation": "Blister",
+        "pronunciation": "ʌwlilʌ",
+        "definition": "آوله"
+      },
+      "ایپغو": {
+        "translation": "Milia",
+        "pronunciation": "ipʁu",
+        "definition": "دانه خرد سفید سر بینی نوزاد"
+      },
+      "ایروم": {
+        "translation": "Gums",
+        "pronunciation": "irom",
+        "definition": "بیره"
+      },
+      "باچه دان بور شودو": {
+        "translation": "Uterus prolapse",
+        "pronunciation": "baʧʌ dan bur ʃudo",
+        "definition": "پرولپس رحم"
+      },
+      "باچه دو": {
+        "translation": "Uterine",
+        "pronunciation": "baʧʌdo",
+        "definition": "رحم"
+      },
+      "بار": {
+        "translation": "Thrush",
+        "pronunciation": "bar",
+        "definition": "آفت دهان"
+      },
+      "بزکان": {
+        "translation": "Chickenpox",
+        "pronunciation": "bozʌkan",
+        "definition": "چیچک"
+      },
+      "بسمیل": {
+        "translation": "Breast pain in breastfeeding women",
+        "pronunciation": "besmil",
+        "definition": "سینه دردی زنان شیرده"
+      },
+      "بغل قدقو": {
+        "translation": "Pneumonia",
+        "pronunciation": "bʌʁʌ qʌdqu",
+        "definition": "سینه‌بغل"
+      },
+      "بغل‌قپچی": {
+        "translation": "Pneumonia",
+        "pronunciation": "bʌʁʌl qʌjʧi",
+        "definition": "سینه‌بغل"
+      },
+      "بغلک": {
+        "translation": "Pneumonia",
+        "pronunciation": "bʌʁʌlʌk",
+        "definition": "سینه‌بغل"
+      },
+      "بغلک": {
+        "translation": "Spasm of chest muscles and nerves",
+        "pronunciation": "bʌʁʌlʌk",
+        "definition": "بغل باز شدن"
+      },
+      "بغلواز رفتو": {
+        "translation": "Chest pain due to unsupported moving of the infant’s body",
+        "pronunciation": "bʌʁʌl vaz rʌfto",
+        "definition": "باز رفتن بغل نوزاد"
+      },
+      "بلغم": {
+        "translation": "Phlegm, sputum, expectoration",
+        "pronunciation": "bʌlʁʌm",
+        "definition": "خلط، ماده آبکی غلیظ در جدار بینی و گلو"
+      },
+      "بمبه پیچکاری": {
+        "translation": "Syringe",
+        "pronunciation": "bʌmbej e peʧkari",
+        "definition": "سیرینج"
+      },
+      "بند کمر": {
+        "translation": "Vertebrae",
+        "pronunciation": "bʌnd i kʌmvr",
+        "definition": "مهره کمر"
+      },
+      "بوجلک شدو": {
+        "translation": "Bone dislocation in hand or foot",
+        "pronunciation": "buʤolʌk ʃudo",
+        "definition": "درآمدن استخوان مفصل دست و پا"
+      },
+      "بوجولک": {
+        "translation": "Small Joint",
+        "pronunciation": "buʤulʌk",
+        "definition": "مفصل خرد"
+      },
+      "بور شدگی": {
+        "translation": "Mass, Bone dislocation",
+        "pronunciation": "bur ʃudʌgi",
+        "definition": "برامدگی، بور شدن استخوان"
+      },
+      "بی بار": {
+        "translation": "Infertile",
+        "pronunciation": "bibar",
+        "definition": "نازا"
+      },
+      "بی نمازی": {
+        "translation": "Menstrual period",
+        "pronunciation": "benʌmazi",
+        "definition": "عادت ماهوار"
+      },
+      "بیخی گوشی": {
+        "translation": "Mumps",
+        "pronunciation": "biχi guʃ",
+        "definition": "اوریون، کله چرک"
+      },
+      "بیسمیل": {
+        "translation": "Mastitis",
+        "pronunciation": "bismel",
+        "definition": "سینه درد"
+      },
+      "بیلچرغه": {
+        "translation": "Swollen lymph nodes",
+        "pronunciation": "bejl ʧerʁʌ",
+        "definition": "دانه، دمل، غده‌های لنفاوی بزرگ شده بر اثر عفونت"
+      },
+      "بینی کور": {
+        "translation": "Nasal Congestion",
+        "pronunciation": "bini kur",
+        "definition": "بند بودن بینی"
+      },
+
+      // شروع پ
+
+      "پالو خاوی": {
+        "translation": "Sexual intercourse",
+        "pronunciation": "palu χɑwi",
+        "definition": "مقاربت جنسی"
+      },
+      "پای گرنگ کدو": {
+        "translation": "Going to labor",
+        "pronunciation": "paj gʌrnʌg kʌdo",
+        "definition": "شروع دردهای ولادی"
+      },
+      "پچک دردی": {
+        "translation": "Post-partum belly pain",
+        "pronunciation": "piʧʌk dʌrdi",
+        "definition": "درد شکم بعد از ولادت"
+      },
+      "پخته": {
+        "translation": "Full-term (FT)",
+        "pronunciation": "poχtʌ",
+        "definition": "رسیده"
+      },
+      "پرهیز": {
+        "translation": "Food Restriction",
+        "pronunciation": "pʌriz",
+        "definition": "محدودیت غذایی"
+      },
+      "پوش": {
+        "translation": "Condom",
+        "pronunciation": "puʃ",
+        "definition": "پوش"
+      },
+      "پوندیده گی": {
+        "translation": "Diarrhea",
+        "pronunciation": "pondidʌgi",
+        "definition": "اسهال"
+      },
+      "پِیچ دِیدُو": {
+        "translation": "Abdominal Pain With Diarrhea",
+        "pronunciation": "piʧ dido",
+        "definition": "درد شکم در هنگام اسهال"
+      },
+      "پیچکاری": {
+        "translation": "Injection",
+        "pronunciation": "peʧkari",
+        "definition": "پیچکاری"
+      },
+      "پیچکاری جلوگیری": {
+        "translation": "Depo",
+        "pronunciation": "peʧ kari ʤʌlʌwgiri",
+        "definition": "پیچکاری جلوگیری"
+      },
+      "پیچکاری قند": {
+        "translation": "Insulin",
+        "pronunciation": "peʧkari qʌnd",
+        "definition": "پیچکاری مرض شکر"
+      },
+      "پیستو درد": {
+        "translation": "Pain in breasts",
+        "pronunciation": "pistu dʌrd",
+        "definition": "سینه درد"
+      },
+      "پیستو دردی": {
+        "translation": "Mastitis",
+        "pronunciation": "Pesto dʌrdi",
+        "definition": "سینه دردی"
+      },
+      "پیشآو": {
+        "translation": "Bladder",
+        "pronunciation": "peʃ Aw",
+        "definition": "مثانه"
+      },
+      "پیله": {
+        "translation": "Colostrum",
+        "pronunciation": "pilʌ",
+        "definition": "کلستروم"
+      },
+
+      // شروع ت
+      "تاو": {
+        "translation": "Fever",
+        "pronunciation": "Taw",
+        "definition": "تب"
+      },
+      "تبک": {
+        "translation": "Tuberculosis",
+        "pronunciation": "tʌbʌk",
+        "definition": "مرض سل یا توبرکلوز"
+      },
+      "تخته سیر": {
+        "translation": "Posterior",
+        "pronunciation": "tʌχte sir",
+        "definition": "پشت قفسه سینه"
+      },
+      "ترس گرفتگی": {
+        "translation": "Epilepsy",
+        "pronunciation": "tʌrs giriftʌgi",
+        "definition": "صرع"
+      },
+      "ترس گرفتو": {
+        "translation": "Pre-eclampsia",
+        "pronunciation": "tars giɾifto",
+        "definition": "پره اکلمپسیا"
+      },
+      "ترسدگی پور": {
+        "translation": "Epilepsy",
+        "pronunciation": "tʌrsidʌgi pur",
+        "definition": "صرع"
+      },
+      "تَسرَه": {
+        "translation": "Baby sever cry",
+        "pronunciation": "tʌsrʌ",
+        "definition": "گریۀ شدید، بی‌هوشی از گریۀ زیاد، در مورد کودکان به کار می‌رود"
+      },
+      "تَماغُو": {
+        "translation": "Cold",
+        "pronunciation": "tʌmaʁu",
+        "definition": "سرما خوردگی"
+      },
+      "تَوخال": {
+        "translation": "Cold sore",
+        "pronunciation": "tʌw χal",
+        "definition": "تب‌خال"
+      },
+      "تیر ناف": {
+        "translation": "Umbilical cord",
+        "pronunciation": "tir e naf",
+        "definition": "بند ناف"
+      },
+      "تِیرسَگ": {
+        "translation": "Eye infection",
+        "pronunciation": "tir sʌg",
+        "definition": "عفونت چشم"
+      },
+      "تِیماو": {
+        "translation": "Fever",
+        "pronunciation": "timʌw",
+        "definition": "تب"
+      },
+      "تیی پای": {
+        "translation": "Soles Of The Feet",
+        "pronunciation": "tʌj e paj",
+        "definition": "کف پا"
+      },
+
+      // شروع چ
+      "جاگه‌گِمِیز": {
+        "translation": "Enuresis",
+        "pronunciation": "ʤagʌ gimiz",
+        "definition": "شب ادرار"
+      },
+      "جان ‌دَردِی": {
+        "translation": "Body Ache",
+        "pronunciation": "ʤan dʌrdi",
+        "definition": "درد در تمام بدن"
+      },
+      "جدکه": {
+        "translation": "Tenderness",
+        "pronunciation": "ʤʌdkʌ",
+        "definition": "حساس بودن بدن به تماس فیزیکی"
+      },
+      "جواب چای": {
+        "translation": "Urine",
+        "pronunciation": "ʤab ʧaj",
+        "definition": "ادرار"
+      },
+      "جوره": {
+        "translation": "Placenta",
+        "pronunciation": "ʤoɾʌ",
+        "definition": "جوره"
+      },
+      "جوغور": {
+        "translation": "Goiter",
+        "pronunciation": "ʤuʁur",
+        "definition": "جاغور"
+      },
+      "جولونگ": {
+        "translation": "Goiter",
+        "pronunciation": "ʤulung",
+        "definition": "جاغور"
+      },
+      "جیله چسبیده": {
+        "translation": "Molding",
+        "pronunciation": "ʤile ʧʌsbidʌ",
+        "definition": "قالب گیری سر، تغیر شکل سوچرها، حالتی که در نتیجه ولادت طبیعی شکل سر طفل کمی تغییر کرده است"
+      },
+
+      // چ
+
+      "چاردرد": {
+        "translation": "Active labor",
+        "pronunciation": "ʧar dʌrd",
+        "definition": "فیز فعال ولادت"
+      },
+      "چاره": {
+        "translation": "Meconium",
+        "pronunciation": "ʧarʌ",
+        "definition": "مکونیوم"
+      },
+      "چجی گیر": {
+        "translation": "Chest congestion",
+        "pronunciation": "ʧeʤi gir",
+        "definition": "گرفتگی سینه"
+      },
+      "چِجِی‌گِیر": {
+        "translation": "Pneumonia",
+        "pronunciation": "ʧeʤi ger",
+        "definition": "سینه‌بغل"
+      },
+      "چرچرشدو": {
+        "translation": "Blurred vision",
+        "pronunciation": "ʧʌrʧʌr ʃudo",
+        "definition": "تار شدن پیش چشم"
+      },
+      "چرک شرمگاه": {
+        "translation": "Vaginitis",
+        "pronunciation": "ʧerke ʃʌrmgah",
+        "definition": "چرک از دامن"
+      },
+      "چرک کشی گوش": {
+        "translation": "Ear Drainage",
+        "pronunciation": "ʧerk kʌʃi guʃ",
+        "definition": "آبکشی گوش"
+      },
+      "چقچی": {
+        "translation": "Acne",
+        "pronunciation": "ʧʌqʧi",
+        "definition": "جوانی دانه"
+      },
+      "چقلی": {
+        "translation": "Baby",
+        "pronunciation": "ʧoʁlʌj",
+        "definition": "طفل خرد"
+      },
+      "چقیدگی": {
+        "translation": "Diaper rash",
+        "pronunciation": "ʧʌqidʌgi",
+        "definition": "بخار بین پای طفل در نتیجه استفاده از پمپر یا لاته ایجاد شده باشد"
+      },
+      "چک چک شدو": {
+        "translation": "Stretch mark",
+        "pronunciation": "ʧʌk ʧʌk ʃudo",
+        "definition": "رد حمل"
+      },
+      "چمبه": {
+        "translation": "Bloating",
+        "pronunciation": "ʧʌmbʌ",
+        "definition": "نفخ"
+      },
+      "چمبه": {
+        "translation": "Swollen abdomen",
+        "pronunciation": "ʧʌmbʌ",
+        "definition": "باد کردن شکم"
+      },
+      "چوره": {
+        "translation": "Inguinal hernia",
+        "pronunciation": "ʧurʌ",
+        "definition": "چوره"
+      },
+      "چوقی": {
+        "translation": "Neonate",
+        "pronunciation": "ʧuqi",
+        "definition": "نوزاد"
+      },
+      "چولی": {
+        "translation": "Neonate",
+        "pronunciation": "ʧulʌj",
+        "definition": "نوزاد"
+      },
+      "چیچک": {
+        "translation": "Chickenpox",
+        "pronunciation": "ʧiʧʌk",
+        "definition": "چیچک"
+      },
+
+
+
+      // د
+
+      "دان باچه دو": {
+        "translation": "Cervix",
+        "pronunciation": "dan e bʌʧʌ do",
+        "definition": "دهانه رحم"
+      },
+      "دان پُختَگِی": {
+        "translation": "Canker sore",
+        "pronunciation": "Dan poχtʌgi",
+        "definition": "دانه‌های کوچک و سفیدرنگ سوزش دارد بر روی زبان و لب"
+      },
+      "دانه بچه دان": {
+        "translation": "Uterine tumor",
+        "pronunciation": "dane bʌʧʌdan",
+        "definition": "تومور رحمی"
+      },
+      "دانه بُزُورکُو": {
+        "translation": "Cowpox",
+        "pronunciation": "Dane bozurku",
+        "definition": "چِیچَک گاوی"
+      },
+      "دانه خال": {
+        "translation": "Blister",
+        "pronunciation": "danʌ χal",
+        "definition": "آوله"
+      },
+      "دانه سُرخ‌کُو": {
+        "translation": "Measles",
+        "pronunciation": "Dane sorΧvku",
+        "definition": "سرخکان"
+      },
+      "دانه سلیم": {
+        "translation": "Fibroid",
+        "pronunciation": "dane sʌlim",
+        "definition": "دانه بد، تومور"
+      },
+      "دانه شدو": {
+        "translation": "Rash",
+        "pronunciation": "danʌ ʃudo",
+        "definition": "خار در آوردن"
+      },
+      "دانه گل": {
+        "translation": "Measles",
+        "pronunciation": "Dane gol",
+        "definition": "سرخکان"
+      },
+      "درد پیش از وقت": {
+        "translation": "Preterm labor",
+        "pronunciation": "dʌrd e piʃ ʌz vʌqt",
+        "definition": "شروع دردهای ولادی پیش از وقت"
+      },
+      "درد پیش قچیق": {
+        "translation": "Lower belly pain",
+        "pronunciation": "dʌrd e peʃ qʌʧiq",
+        "definition": "درد زیر شکم"
+      },
+      "دَردِ زا": {
+        "translation": "Labor pain",
+        "pronunciation": "dʌrd e za",
+        "definition": "درد وضع حمل"
+      },
+      "دَرد سرلغک": {
+        "translation": "Typhoid fever",
+        "pronunciation": "dʌrd e sʌr lʌʁʌk",
+        "definition": "محریقه"
+      },
+      "دَردِ سه‌ ھفتا": {
+        "translation": "Typhoid fever",
+        "pronunciation": "dʌrd e se haftʌ",
+        "definition": "محریقه"
+      },
+      "درد وقت پالو خاو": {
+        "translation": "Sex hurt",
+        "pronunciation": "dʌrd e vaqt e χɑw palu",
+        "definition": "درد در هنگام مقاربت"
+      },
+      "درگه جان": {
+        "translation": "Vagina",
+        "pronunciation": "dʌrge ʤan",
+        "definition": "واژن"
+      },
+      "دَرُو رَو": {
+        "translation": "Diarrhea",
+        "pronunciation": "daru rʌw",
+        "definition": "اسهال"
+      },
+      "دَغدِنَه کدو": {
+        "translation": "Shivering",
+        "pronunciation": "dʌʁdinʌ kʌdu",
+        "definition": "تب و لرز"
+      },
+      "دَک‌ خُوردُو": {
+        "translation": "Having pain, slow walk, Shivering",
+        "pronunciation": "dʌk χurdo",
+        "definition": "لرزیدن، آرام آرام راه رفتن، درد داشتن"
+      },
+      "دل بله": {
+        "translation": "Nausea",
+        "pronunciation": "dil bʌlʌ",
+        "definition": "تهوع"
+      },
+      "دِل‌دَرد": {
+        "translation": "Stomach ache",
+        "pronunciation": "dil dʌrd",
+        "definition": "درد معده"
+      },
+      "دلنگ": {
+        "translation": "Lesion",
+        "pronunciation": "dʌlʌng",
+        "definition": "غبن، ضایعه و زخم"
+      },
+      "دم ده سری": {
+        "translation": "Low mood",
+        "pronunciation": "dʌm dʌ sʌri",
+        "definition": "بی حوصله ، بی حال و بی رمق"
+      },
+      "دم گرفتو": {
+        "translation": "Aspiration",
+        "pronunciation": "dʌm girifto",
+        "definition": "استنشاق"
+      },
+      "ده جاگه استراحت": {
+        "translation": "Bed rest",
+        "pronunciation": "dʌ jagʌ estʌrahʌt",
+        "definition": "استراحت مطلق"
+      },
+      "دو گونی": {
+        "translation": "Identical twins",
+        "pronunciation": "doguni",
+        "definition": "دوگانگی"
+      },
+      "دوجو بی جای": {
+        "translation": "Ectopic pregnancy",
+        "pronunciation": "duʤo bi ʤaj",
+        "definition": "حاملگی خارج رحمی"
+      },
+      "دیلمه": {
+        "translation": "Colostrum",
+        "pronunciation": "dilmʌ",
+        "definition": "فیله یا اولین شیرمادر"
+      },
+
+      // ر
+
+      "رگ به رگ شدو": {
+        "translation": "Muscle spasticity",
+        "pronunciation": "rʌg bʌ rʌg ʃudo",
+        "definition": "رگ شدن"
+      },
+      "رنجِ‌بَرِیک": {
+        "translation": "Tuberculosis",
+        "pronunciation": "rʌnʤ bʌrik",
+        "definition": "بیماری سل"
+      },
+      "رَوَک": {
+        "translation": "Chest pain due to unsupported moving of the infant’s body",
+        "pronunciation": "rʌvʌk",
+        "definition": "باز رفتن بغل نوزاد"
+      },
+      "رِیخ‌رَو": {
+        "translation": "Diarrhea",
+        "pronunciation": "riχ rʌw",
+        "definition": "اسهال"
+      },
+      "رِیزِش": {
+        "translation": "Cold",
+        "pronunciation": "rizeʃ",
+        "definition": "سرما خوردگی"
+      },
+      "ریشکک": {
+        "translation": "Lice",
+        "pronunciation": "riʃkʌk",
+        "definition": "شپش"
+      },
+      "ریم": {
+        "translation": "Pus",
+        "pronunciation": "rim",
+        "definition": "چیرکین"
+      },
+      "ریم باچه دو": {
+        "translation": "Vaginal discharge",
+        "pronunciation": "ɾim e baʧʌdo",
+        "definition": "چرک از دامن"
+      },
+      "ریم راه جان": {
+        "translation": "Vaginal discharge",
+        "pronunciation": "rim e rah e ʤan",
+        "definition": "ترشحات واژنی"
+      },
+      "زاچه": {
+        "translation": "Woman who has recently given birth to a child",
+        "pronunciation": "zɑʧʌ",
+        "definition": "زاچه"
+      },
+      "زاچهباد": {
+        "translation": "Childbed fever, puerperal fever",
+        "pronunciation": "zɑʧʌbɑd",
+        "definition": "زاچه باد"
+      },
+      "زاچهگی": {
+        "translation": "Postpartum",
+        "pronunciation": "zɑʧʌgi",
+        "definition": "زاچه گی"
+      },
+
+      // ز
+
+      "زاییدو": {
+        "translation": "Child birth",
+        "pronunciation": "zʌjidu",
+        "definition": "ولادت"
+      },
+      "زَردِی": {
+        "translation": "Jaundice",
+        "pronunciation": "zʌrdi",
+        "definition": "یرقان"
+      },
+      "زردی آمدو": {
+        "translation": "Vaginal discharge",
+        "pronunciation": "zardi amʌdo",
+        "definition": "چرک از دامن"
+      },
+      "زردی سیاه": {
+        "translation": "Hepatitis",
+        "pronunciation": "zʌrdi sijah",
+        "definition": "زردی سیاه"
+      },
+      "زُکام": {
+        "translation": "Cold",
+        "pronunciation": "zokam",
+        "definition": "سرما خوردگی"
+      },
+      "زنانگی": {
+        "translation": "Vulva",
+        "pronunciation": "zʌnanʌgi",
+        "definition": "شرمگاه"
+      },
+      "زُوف": {
+        "translation": "Light head",
+        "pronunciation": "zuf",
+        "definition": "ضعف، از هوش رفتن"
+      },
+      "زیدو": {
+        "translation": "Child birth",
+        "pronunciation": "zʌjdo",
+        "definition": "ولادت"
+      },
+
+      // س
+
+
+      "سامان": {
+        "translation": "IUD",
+        "pronunciation": "saman",
+        "definition": "دستگاه داخل رحمی"
+      },
+      "سایه گرفتو": {
+        "translation": "Seizure",
+        "pronunciation": "sɑjʌ girifo",
+        "definition": "اختلاج، تشنج"
+      },
+      "سر چرخک": {
+        "translation": "Room is spinning",
+        "pronunciation": "sʌr ʧʌrχʌk",
+        "definition": "چرخ خوردن دور سر"
+      },
+      "سر لوخ": {
+        "translation": "Nipple",
+        "pronunciation": "sʌr  luχ",
+        "definition": "سر سینه"
+      },
+      "سرباد": {
+        "translation": "Postpartum depression",
+        "pronunciation": "sʌrbad",
+        "definition": "افسردگی بعد از ولادت"
+      },
+      "سرخ بوده": {
+        "translation": "Allergen",
+        "pronunciation": "sorχ budʌ",
+        "definition": "حساسیت زا"
+      },
+      "سرخکانچه": {
+        "translation": "Rubella",
+        "pronunciation": "surχʌkanʧe",
+        "definition": "حساسیت زا"
+      },
+      "سرخکو": {
+        "translation": "Measles",
+        "pronunciation": "sorΧvku",
+        "definition": "سرخکان"
+      },
+      "سرخی": {
+        "translation": "Inflammation",
+        "pronunciation": "surχi",
+        "definition": "التهاب"
+      },
+      "سرطان پیستو": {
+        "translation": "Breast cancer",
+        "pronunciation": "sʌrʌtan pisto",
+        "definition": "سرطان سینه"
+      },
+      "سرلولو": {
+        "translation": "Nipple",
+        "pronunciation": "sʌr lulu",
+        "definition": "سر سینه"
+      },
+      "سرناپاک": {
+        "translation": "The woman who had intercourse",
+        "pronunciation": "sʌr napak",
+        "definition": "زنی که باشوهرش آمیزش داشته"
+      },
+      "سفره": {
+        "translation": "Baby severe cry",
+        "pronunciation": "sʌfrʌ",
+        "definition": "گریه شدید طفل"
+      },
+      "سَفرَه": {
+        "translation": "Faint",
+        "pronunciation": "sʌfrʌ",
+        "definition": "غش، بیهوش شدن"
+      },
+      "سَلمان": {
+        "translation": "Mohalim",
+        "pronunciation": "sʌlman",
+        "definition": "کسی که کودکان را ختنه کند"
+      },
+      "سَماوِی": {
+        "translation": "Cold",
+        "pronunciation": "sʌmavi",
+        "definition": "سرما خوردگی"
+      },
+      "سَمایِی": {
+        "translation": "Cold",
+        "pronunciation": "sʌmaji",
+        "definition": "سرما خوردگی"
+      },
+      "سنت کردن": {
+        "translation": "Circumcision",
+        "pronunciation": "sunnʌt kʌdu",
+        "definition": "ختنه"
+      },
+      "سنده": {
+        "translation": "Infertile",
+        "pronunciation": "sʌndʌ",
+        "definition": "نازا"
+      },
+      "سنگ گرده": {
+        "translation": "Kidney stones",
+        "pronunciation": "sʌng e gordʌ",
+        "definition": "سنگ گرده"
+      },
+      "سوا": {
+        "translation": "Miscarriage",
+        "pronunciation": "siva",
+        "definition": "نقصان"
+      },
+      "سوا کدو": {
+        "translation": "Miscarriage",
+        "pronunciation": "siva kʌdu",
+        "definition": "نقصان کردن"
+      },
+      "سوچی کدو": {
+        "translation": "Getting pregnant, the pregnant woman who has a desire to specific food",
+        "pronunciation": "soʧi kʌdu",
+        "definition": "حامله شدن، ویار داشتن"
+      },
+      "سوزک": {
+        "translation": "Painful urination, Vaginal yeast infection",
+        "pronunciation": "suzʌk",
+        "definition": "سوزش ادرار, عفونت خارش دار"
+      },
+      "سوزن سوزن شدو": {
+        "translation": "Tingling",
+        "pronunciation": "suzʌn suzʌn ʃudo",
+        "definition": "خواب رفتن یا مور مور شدن"
+      },
+      "سول": {
+        "translation": "Wart",
+        "pronunciation": "sol",
+        "definition": "زگیل، زخ"
+      },
+      "سوله": {
+        "translation": "Dull",
+        "pronunciation": "sulʌ",
+        "definition": "کسل، بیحال"
+      },
+      "سووز شدون گرد نول": {
+        "translation": "Cyanosis",
+        "pronunciation": "sʌwooz ʃudon e gird e nul",
+        "definition": "سیاه شدن صورت"
+      },
+      "سیا سُلفه": {
+        "translation": "Pertussis",
+        "pronunciation": "sia solfʌ",
+        "definition": "سیاه‌سرفه"
+      },
+      "سیا کوی": {
+        "translation": "Bruise",
+        "pronunciation": "sija kuj",
+        "definition": "کبودی"
+      },
+      "سیاه و سووز شدو": {
+        "translation": "Dark curtain in vision",
+        "pronunciation": "sijah o sʌwuz ʃudo",
+        "definition": "سیاه رفتن پیش چشم"
+      },
+      "سیاهی پیچ کدو": {
+        "translation": "Sleep apnea",
+        "pronunciation": "sijahi piʧ kʌdu",
+        "definition": "نفس قیدی شبانه"
+      },
+      "سیجونگ": {
+        "translation": "Urine incontinence",
+        "pronunciation": "siʤung",
+        "definition": "بی اختیاری ادراری"
+      },
+      "سیل": {
+        "translation": "Tuberculosis (TB)",
+        "pronunciation": "sil",
+        "definition": "توبرکلوز"
+      },
+      "سینگیر کش": {
+        "translation": "Strain",
+        "pronunciation": "singir kʌʃ",
+        "definition": "کشیدگی عضلات"
+      },
+      "سِینگِیرِی": {
+        "translation": "Pneumonia",
+        "pronunciation": "sejngirej",
+        "definition": "سینه‌بغل"
+      },
+      "سینه قیدی": {
+        "translation": "Asthma",
+        "pronunciation": "sinʌ aʌjdi",
+        "definition": "نفس تنگی"
+      },
+
+      // ش
+
+      "شاش دان": {
+        "translation": "Bladder",
+        "pronunciation": "ʃʌʃ dan",
+        "definition": "مثانه"
+      },
+      "شرمگاه": {
+        "translation": "Vulva",
+        "pronunciation": "ʃʌrmgah",
+        "definition": "شرمگاه"
+      },
+      "شعاع گرفتو": {
+        "translation": "Bili Lights use (phototherapy)",
+        "pronunciation": "ʃua girifto",
+        "definition": "زیر نور لامپ گرفتن"
+      },
+      "شکم دار": {
+        "translation": "Pregnant",
+        "pronunciation": "ʃekʌm dar",
+        "definition": "حامله"
+      },
+      "شکم دَردی": {
+        "translation": "Diarrhea",
+        "pronunciation": "ʃikʌm dʌrdi",
+        "definition": "اسهال"
+      },
+      "شکم‌رَو": {
+        "translation": "Diarrhea",
+        "pronunciation": "ʃikʌm rʌw",
+        "definition": "اسهال"
+      },
+      "شنده گی": {
+        "translation": "Infertility",
+        "pronunciation": "ʃʌndʌgi",
+        "definition": "نازایی"
+      },
+      "شِیر سُوخته": {
+        "translation": "Malnourished",
+        "pronunciation": "ʃir suχtʌ",
+        "definition": "سوءتغذی"
+      },
+      "شِیرِینچه": {
+        "translation": "Pustules",
+        "pronunciation": "ʃirinʧʌ",
+        "definition": "جوش‌های کوچک زرد در ناحیۀ دهان"
+      },
+      "شیغی پای": {
+        "translation": "Ankle",
+        "pronunciation": "ʃiʁʌj e paj",
+        "definition": "دلک پا، قوزک پا"
+      },
+
+
+      // ض
+
+      "ضایع کدو": {
+        "translation": "Miscarriage",
+        "pronunciation": "zaje kʌdo",
+        "definition": "نقصان کردن"
+      },
+
+      // ع
+
+      "عرق سوختگی": {
+        "translation": "Diaper rash",
+        "pronunciation": "ʌraq suχtʌgi",
+        "definition": "عرق سوختگی"
+      },
+      "عروقی": {
+        "translation": "Congenital, Hereditary",
+        "pronunciation": "Oruqi",
+        "definition": "ارثی"
+      },
+      "عمل": {
+        "translation": "Cesarean section",
+        "pronunciation": "ʌmʌl",
+        "definition": "سزارین"
+      },
+      "عمل کتوگ": {
+        "translation": "Tonsillectomy",
+        "pronunciation": "ʌmʌle kʌtug",
+        "definition": "عمل تانسیل"
+      },
+
+      //غ
+
+      "غرلی": {
+        "translation": "Infant",
+        "pronunciation": "ʁorlʌi",
+        "definition": "طفل"
+      },
+
+      // ف
+
+      "فشار بلند دوجونی": {
+        "translation": "Gestational high blood pressure",
+        "pronunciation": "fiʃɑɾ e bolʌnd e doʤuni",
+        "definition": "فشار خون بالای حاملگی"
+      },
+      "قآو": {
+        "translation": "Condom",
+        "pronunciation": "qaw",
+        "definition": "پوش"
+      },
+
+      // ق
+
+      "قره موغ": {
+        "translation": "Chickenpox",
+        "pronunciation": "qʌrʌ muʁ",
+        "definition": "چیچک"
+      },
+      "قفه شدو": {
+        "translation": "Choke",
+        "pronunciation": "qʌfv ʃudo",
+        "definition": "خفه کردن"
+      },
+      "قلچی": {
+        "translation": "Contagious disease",
+        "pronunciation": "qʌlʧi",
+        "definition": "بیماری مسری"
+      },
+      "قم ناشته": {
+        "translation": "Menstrual period",
+        "pronunciation": "qʌm naʃtʌ",
+        "definition": "مریضی ماهوار"
+      },
+      "قورگ": {
+        "translation": "Diarrhea",
+        "pronunciation": "qurʌg",
+        "definition": "اسهال"
+      },
+      "قوشی": {
+        "translation": "Cleft lip",
+        "pronunciation": "quʃi",
+        "definition": "نوزاد لب چاک، لب شکری"
+      },
+      "قوعنگ پاره شدو": {
+        "translation": "Amniotic sac rupture",
+        "pronunciation": "quʌnʌk parʌ ʃudʌn",
+        "definition": "پاره شدو کیسه آمنیوتیک"
+      },
+      "قولخک": {
+        "translation": "Pinworm infection",
+        "pronunciation": "qulχʌk",
+        "definition": "کرمک"
+      },
+      "قولینج شکم": {
+        "translation": "Colic",
+        "pronunciation": "qulinʤ",
+        "definition": "قولینج"
+      },
+      "قی": {
+        "translation": "Vomit",
+        "pronunciation": "qʌj",
+        "definition": "استفراغ"
+      },
+      "قیطه": {
+        "translation": "Abdomen",
+        "pronunciation": "qittʌ",
+        "definition": "شکم"
+      },
+      "قیک": {
+        "translation": "Bow legs",
+        "pronunciation": "qʌjʌk",
+        "definition": "پاهای کمانی"
+      },
+
+
+      // 
+      "کادو اشتو": {
+        "translation": "Cupping",
+        "pronunciation": "kadu eʃto",
+        "definition": "حجامت کردن"
+      },
+      "کاسی ریزه": {
+        "translation": "Small size pelvic",
+        "pronunciation": "kasʌj rizʌ",
+        "definition": "لگن خرد"
+      },
+      "کالا بد شدو": {
+        "translation": "Menstrual period",
+        "pronunciation": "kala bʌd ʃudo",
+        "definition": "مریضی ماهوار شدن"
+      },
+      "کام چک": {
+        "translation": "Cleft palate",
+        "pronunciation": "kam ʧak",
+        "definition": "نوزاد کام شکری"
+      },
+      "کپسول بازو": {
+        "translation": "Implant",
+        "pronunciation": "kʌpsul e bazu",
+        "definition": "امپلنت"
+      },
+      "کَتُوک دَردِی": {
+        "translation": "Throat pain",
+        "pronunciation": "kʌtuk dʌrdi",
+        "definition": "درد گلو"
+      },
+      "کجک دردی": {
+        "translation": "Appendicitis",
+        "pronunciation": "kʌjʌk dʌrdi",
+        "definition": "آپاندیسیت"
+      },
+      "کجگ درد": {
+        "translation": "Constipation",
+        "pronunciation": "kʌʤʌg dʌrd",
+        "definition": "قبضیت"
+      },
+      "کرختی": {
+        "translation": "Anesthesia",
+        "pronunciation": "kʌrʌχti",
+        "definition": "بی حسی"
+      },
+      "کشیدن بچه دان": {
+        "translation": "Hysterectomy",
+        "pronunciation": "kʌʃidʌn e bʌʧʌdan",
+        "definition": "کشیدن رحم"
+      },
+      "ککرک ماندو": {
+        "translation": "Muscle spasm",
+        "pronunciation": "kʌkrʌk mando",
+        "definition": "شخ ماندن"
+      },
+      "کله": {
+        "translation": "Chin",
+        "pronunciation": "kʌlʌ",
+        "definition": "زناق"
+      },
+      "کم تول": {
+        "translation": "Low birth weight",
+        "pronunciation": "kʌm tol",
+        "definition": "نوزاد با وزن کم"
+      },
+      "کم جان": {
+        "translation": "Severe fatigue",
+        "pronunciation": "kʌm ʤan",
+        "definition": "خستگی زیاد"
+      },
+      "کم خاوی": {
+        "translation": "Insomnia",
+        "pronunciation": "kʌm χawi",
+        "definition": "کم خوابی"
       },
       "کم خو": {
-        translation: "Anemia",
-        pronunciation: "Anemia",
+        "translation": "Anemia",
+        "pronunciation": "kʌm χu",
+        "definition": "کم خونی"
       },
-      "شاش دان": {
-        translation: "Bladder",
-        pronunciation: "Bladder",
+      "کم هوش": {
+        "translation": "Down Syndrome",
+        "pronunciation": "kʌm huʃ",
+        "definition": "عقب مانده ذهنی"
       },
-      "دان باچه دو": {
-        translation: "Cervix",
-        pronunciation: "Cervix",
+      "کم واک": {
+        "translation": "Malnourished",
+        "pronunciation": "kʌm wak",
+        "definition": "سوء تغذی"
       },
-    },
-    "Post-partum belly pain": {
-      translation: "پچک دردی",
-      pronunciation: "piʧʌk dʌrdi",
-    },
-    "Puerperal fever": {
-      translation: "زاچهباد",
-      pronunciation: "zɑʧʌbɑd",
-    },
-    Pus: {
-      translation: "ریم",
-      pronunciation: "rim",
-    },
-    Pustules: {
-      translation: "شِیرِینچه",
-      pronunciation: "ʃirinʧʌ",
+      "کمر آمدو": {
+        "translation": "Menstrual period",
+        "pronunciation": "kʌmʌr amʌdo",
+        "definition": "عادت شدن"
+      },
+      "کمر خشکی": {
+        "translation": "Menopause",
+        "pronunciation": "kʌmʌr χoʃki",
+        "definition": "یایسگی"
+      },
+      "کمروازشدو": {
+        "translation": "Menstrual period",
+        "pronunciation": "kʌmʌr vaz ʃudo",
+        "definition": "عادت ماهوار شدن"
+      },
+      "کوره": {
+        "translation": "Abdominal",
+        "pronunciation": "kʌwrʌ",
+        "definition": "شکم"
+      },
+      "کوره درد": {
+        "translation": "Abdominal pain",
+        "pronunciation": "kʌwrʌ dʌrd",
+        "definition": "درد شکم"
+      },
+      "کوری درد": {
+        "translation": "Labor pain",
+        "pronunciation": "kuri dʌrd",
+        "definition": "درد ولادت"
+      },
+      "کوفتگی": {
+        "translation": "Bruise",
+        "pronunciation": "kuftʌgi",
+        "definition": "کبودی"
+      },
+      "کوک": {
+        "translation": "Stitch, Suture",
+        "pronunciation": "kuk",
+        "definition": "بخیه"
+      },
+      "کیپ شدن گوش": {
+        "translation": "Muffled ear, ear blockage",
+        "pronunciation": "kip ʃudʌn e guʃ",
+        "definition": "دپ شدن گوش"
+      },
+      "کیدو": {
+        "translation": "Pain",
+        "pronunciation": "kʌjdo",
+        "definition": "درد کشیدن"
+      },
+      "گردگ": {
+        "translation": "Lice",
+        "pronunciation": "gʌrdʌg",
+        "definition": "شپش"
+      },
+      "گردو شخک": {
+        "translation": "Tetanus",
+        "pronunciation": "gʌrdu ʃʌχʌk",
+        "definition": "تیتانوس"
+      },
+      "گزگ": {
+        "translation": "Inflammation of ulcer",
+        "pronunciation": "gʌzʌg",
+        "definition": "التهابی شدن زخم"
+      },
+      "گل وازشدو": {
+        "translation": "Bleeding during pregnancy",
+        "pronunciation": "gul vaz ʃudo",
+        "definition": "خون ریزی درزمان حاملگی"
+      },
+      "گنگاوش": {
+        "translation": "Light-headed",
+        "pronunciation": "gʌngavoʃ",
+        "definition": "بی حال"
+      },
+      "گوش درد": {
+        "translation": "Otitis",
+        "pronunciation": "guʃ dʌrd",
+        "definition": "التهاب گوش"
+      },
+      "گیرا": {
+        "translation": "Contagious",
+        "pronunciation": "gira",
+        "definition": "مسری"
+      },
+      "گیمیز": {
+        "translation": "Urine",
+        "pronunciation": "gimiz",
+        "definition": "شاش، ادرار"
+      },
+      "گیمیز بندک": {
+        "translation": "Urinary retention",
+        "pronunciation": "gimiz bʌndʌk",
+        "definition": "شاش بند"
+      },
+      "لبای ریزه درگه جان": {
+        "translation": "Labia minora",
+        "pronunciation": "lʌbaj e rizʌ dʌrgi ʤan",
+        "definition": "لب های ریزه شرمگاهی"
+      },
+      "لبای زنانه گی": {
+        "translation": "Labia",
+        "pronunciation": "lʌbaj e zʌnanagi",
+        "definition": "لبهای شرمگاهی"
+      },
+      "لبای کته درگه جان": {
+        "translation": "Labia majora",
+        "pronunciation": "lʌbaj e kʌtʌ dʌrgi ʤan",
+        "definition": "لبهای کلان شرمگاهی"
+      },
+      "لکه حاملگی": {
+        "translation": "Melasma",
+        "pronunciation": "lʌke hamelegi",
+        "definition": "ماسک حاملگی"
+      },
+      "لکه ماه گرفتگی": {
+        "translation": "Birthmark",
+        "pronunciation": "lake mah giriftʌgi",
+        "definition": "لکه ماه گرفتگی"
+      },
+      "لولوک": {
+        "translation": "Nipple",
+        "pronunciation": "luluk",
+        "definition": "سر سینه"
+      },
+      "لین": {
+        "translation": "Catheter",
+        "pronunciation": "lʌjn",
+        "definition": "سوزن"
+      },
+
+      //
+      
+      "ماینه تلوزونی": {
+        "translation": "Ultrasound",
+        "pronunciation": "majne telvizuni",
+        "definition": "معاینه تلویزیونی"
+      },
+      "ماینه دامن": {
+        "translation": "Pelvic exam",
+        "pronunciation": "majene damʌn",
+        "definition": "معاینه از واژن"
+      },
+      "مجرد شدو": {
+        "translation": "Puberty",
+        "pronunciation": "mujʌrʌd ʃudo",
+        "definition": "بالغ شدن، جوان شدن"
+      },
+      "مرداری دانه": {
+        "translation": "Bump",
+        "pronunciation": "mordari danʌ",
+        "definition": "جوش دانه، دانه"
+      },
+      "مرض تبک": {
+        "translation": "Tuberculosis (TB)",
+        "pronunciation": "mʌrʌz e tʌbʌk",
+        "definition": "توبرکلوز"
+      },
+      "مرض قند دُجونی": {
+        "translation": "Gestational diabetes",
+        "pronunciation": "mʌrʌz e qʌnd e doʤuni",
+        "definition": "مرض شکر حاملگی"
+      },
+      "مستی": {
+        "translation": "Libido",
+        "pronunciation": "mʌsti",
+        "definition": "میل جنسی"
+      },
+      "معافیت": {
+        "translation": "Immunization",
+        "pronunciation": "muafijat",
+        "definition": "واکسین"
+      },
+      "مَلَّم": {
+        "translation": "Medicine",
+        "pronunciation": "mʌlʌm",
+        "definition": "دوا، مرهم"
+      },
+      "مُورِیقه": {
+        "translation": "Typhoid fever",
+        "pronunciation": "muriqʌ",
+        "definition": "محریقه"
+      },
+      "میده شدگی": {
+        "translation": "Fracture",
+        "pronunciation": "mʌjdʌʃodʌgi",
+        "definition": "شکستگی"
+      },
+      "مینه ی جان": {
+        "translation": "Inside vagina",
+        "pronunciation": "menʌj e ʤan",
+        "definition": "داخل واژن"
+      },
+      "ناجُور": {
+        "translation": "Sick",
+        "pronunciation": "naʤor",
+        "definition": "مریض"
+      },
+      "ناخن خیدو": {
+        "translation": "Nail biting",
+        "pronunciation": "naχon χʌjdu",
+        "definition": "جویدن ناخن"
+      },
+      "ناخُورِی": {
+        "translation": "Anorexia",
+        "pronunciation": "naχori",
+        "definition": "بی‌اشتهایی"
+      },
+      "ناخُوش": {
+        "translation": "Sick",
+        "pronunciation": "naχoʃ",
+        "definition": "مریض"
+      },
+      "ناخُوشِی": {
+        "translation": "Sickness",
+        "pronunciation": "naχoʃi",
+        "definition": "بیماری، کسالت"
+      },
+      "ناف بورشودگی": {
+        "translation": "Umbilical hernia",
+        "pronunciation": "naf bur ʃudʌgi",
+        "definition": "رفتن ناف"
+      },
+      "ناف رَفتُو": {
+        "translation": "A condition the person has fever and is lightheaded",
+        "pronunciation": "naf rʌfto",
+        "definition": "نوعی بیماری که با تب و سست شدن عضلات همراه است"
+      },
+      "نزله": {
+        "translation": "Allergic conjunctivitis, Postnasal drip",
+        "pronunciation": "nʌzlʌ",
+        "definition": "چشم دردی حساسیتی, ترشحات پشت حلق"
+      },
+      "نزلۀ سرد": {
+        "translation": "Cold and chill",
+        "pronunciation": "nizle sʌrd",
+        "definition": "تب سرد"
+      },
+      "نشانی": {
+        "translation": "Mongolian spots, Symptom",
+        "pronunciation": "niʃani",
+        "definition": "لکه آبی رنگ در پشت نوزاد, علامت"
+      },
+      "نَفَس‌ قیدی": {
+        "translation": "Asthma",
+        "pronunciation": "nʌfʌs qʌjdi",
+        "definition": "نفس تنگی"
+      },
+      "نل باچه دو": {
+        "translation": "Fallopian tube",
+        "pronunciation": "nʌl e baʧʌ do",
+        "definition": "لوله رحمی"
+      },
+      "نلغه": {
+        "translation": "Infant",
+        "pronunciation": "nilʁʌ",
+        "definition": "طفل خورد، جنین"
+      },
+      "نلغه ده کوره خشک شدو": {
+        "translation": "Missing miscarriage",
+        "pronunciation": "nelʁa da ko͞orʌ χōʃk ʃudo",
+        "definition": "نقصان فراموش شده"
+      },
+      "نلغهتو": {
+        "translation": "Mother of an infant",
+        "pronunciation": "nilʁʌtu",
+        "definition": "نلغه دار"
+      },
+      "نو بالغ": {
+        "translation": "Menarche",
+        "pronunciation": "nʌw baleʁ",
+        "definition": "نوبالغ"
+      },
+      "نیکلگی عروقی": {
+        "translation": "Genetic abnormality",
+        "pronunciation": "niklʌgi oruqi",
+        "definition": "معلولیت ارثی"
+      },
+      "نیلغه ایربی": {
+        "translation": "Large for gestational age (LGA)",
+        "pronunciation": "nilʁe irbi",
+        "definition": "نوزاد کلان"
+      },
+      "نیلغه بد خوی": {
+        "translation": "Cranky",
+        "pronunciation": "nilʁe bʌd χuj",
+        "definition": "طفل نا آرام"
+      },
+      "نیلغه پر قوت": {
+        "translation": "Fetal Macrosomia",
+        "pronunciation": "nilʁʌ por qovʌt",
+        "definition": "نوزاد بزرگ"
+      },
+      "نیلغه زبردست": {
+        "translation": "Fetal Macrosomia",
+        "pronunciation": "nilʁʌ zʌbʌr dʌst",
+        "definition": "نوزاد بزرگ"
+      },
+      "نیلغه گی": {
+        "translation": "Neonatal",
+        "pronunciation": "nilʁʌgi",
+        "definition": "نوزادی"
+      },
+      "نیلغه مرده زیدو": {
+        "translation": "Stillbirth",
+        "pronunciation": "nilʁʌ murdʌ zʌjdu",
+        "definition": "ولادت طفل مرده"
+      },
+      "نیلغه ناتو": {
+        "translation": "Low birth weight baby",
+        "pronunciation": "nilʁe nato",
+        "definition": "نوزاد کم وزن"
+      },
+      "نیمکله گی": {
+        "translation": "Anomaly",
+        "pronunciation": "nimkʌlʌgi",
+        "definition": "غیر نرمال"
+      },
+      "همراه طفل": {
+        "translation": "Placenta",
+        "pronunciation": "hʌmrah e tefl",
+        "definition": "جفت حاملگی"
+      },
+      "وارنا شدو": {
+        "translation": "Puberty",
+        "pronunciation": "wuɾnɑ ʃudo",
+        "definition": "بالغ شدن"
+      },
+      "ور": {
+        "translation": "Edema",
+        "pronunciation": "vor",
+        "definition": "آماس"
+      },
+      "وغ زدو": {
+        "translation": "Nausea",
+        "pronunciation": "voʁ zʌdo",
+        "definition": "تهوع"
+      },
+      "وغله": {
+        "translation": "Vomit",
+        "pronunciation": "voʁlʌ",
+        "definition": "استفراغ، تهوع"
+      },
+      "ولادت از دامن": {
+        "translation": "Normal delivery",
+        "pronunciation": "veladʌt ʌz damʌn",
+        "definition": "زایمان طبیعی"
+      },
+      "ولادت نارسیده": {
+        "translation": "Preterm birth",
+        "pronunciation": "veladʌt e narʌsidʌ",
+        "definition": "ولادت نارس"
+      },
+      "ولقیله": {
+        "translation": "Vomit",
+        "pronunciation": "volqilʌ",
+        "definition": "استفراغ کردن"
+      },
+      "یار": {
+        "translation": "Placenta",
+        "pronunciation": "jar",
+        "definition": "جفت حاملگی"
+      },
+      "یک جای شدو": {
+        "translation": "Sexual intercourse",
+        "pronunciation": "jʌk ʤaj ʃudo",
+        "definition": "مقاربت جنسی"
+      },
     },
   };
 
@@ -1216,60 +2725,36 @@ document.addEventListener("DOMContentLoaded", function () {
     const dictionary = translations[direction];
     const resultElement = document.getElementById("result");
     resultElement.innerHTML = ""; // Clear previous results
-  
-    let result = 
+
+    let result =
       dictionary[inputWord] ||
       dictionary[inputWord.toLowerCase()] ||
       dictionary[inputWord.toUpperCase()];
-  
+
     if (result) {
-      if (Array.isArray(result.definitions)) {
-        result.definitions.forEach((def) => {
-          const definitionContainer = document.createElement("div");
-          definitionContainer.innerHTML = `<b>Translation:</b> ${def.translation}<br><b>Pronunciation:</b> ${def.pronunciation}`;
-          if (def.partOfSpeech) {
-            definitionContainer.innerHTML += `<br>Part of Speech: ${def.partOfSpeech}`;
-          }
-          resultElement.appendChild(definitionContainer);
-  
-          if (def.sound) {
-            const audioContainer = document.createElement("div");
-            audioContainer.classList.add("audio-container");
-            const audioLabel = document.createElement("span");
-            audioLabel.innerHTML = "Listen:";
-            audioLabel.classList.add("audio-label");
-            audioContainer.appendChild(audioLabel);
-            appendAudioPlayer(audioContainer, def.sound);
-            definitionContainer.appendChild(audioContainer);
-          }
-        });
-      } else {
-        const translationContainer = document.createElement("div");
-        translationContainer.innerHTML = `<b>Translation:</b> ${result.translation}<br><b>Pronunciation:</b> ${result.pronunciation}`;
-        resultElement.appendChild(translationContainer);
-  
-        if (result.sound) {
-          const audioContainer = document.createElement("div");
-          audioContainer.classList.add("audio-container");
-          const audioLabel = document.createElement("span");
-          audioLabel.innerHTML = "<b>Listen / تلغظ :</b>";
-          audioLabel.classList.add("audio-label");
-          audioContainer.appendChild(audioLabel);
-          appendAudioPlayer(audioContainer, result.sound);
-          translationContainer.appendChild(audioContainer);
-        }
+      const definitionContainer = document.createElement("div");
+      definitionContainer.innerHTML = `<b>Translation:</b> ${result.translation}<br><b>Pronunciation:</b> ${result.pronunciation}<br><b>Definition:</b> ${result.definition}`;
+      resultElement.appendChild(definitionContainer);
+
+      if (result.sound) {
+        const audioContainer = document.createElement("div");
+        audioContainer.classList.add("audio-container");
+        const audioLabel = document.createElement("span");
+        audioLabel.innerHTML = "<b>Listen / تلغظ :</b>";
+        audioLabel.classList.add("audio-label");
+        audioContainer.appendChild(audioLabel);
+        appendAudioPlayer(audioContainer, result.sound);
+        definitionContainer.appendChild(audioContainer);
       }
     } else {
       resultElement.innerText = "Translation not found.";
     }
   }
-  
+
   function appendAudioPlayer(container, src) {
     const audio = document.createElement('audio');
     audio.controls = true;
     audio.src = src;
-    
     container.appendChild(audio);
   }
-}
-  )();
+})();
