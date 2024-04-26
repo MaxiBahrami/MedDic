@@ -14,6 +14,6 @@ Installation:
 HazaraMed is ready for immediate use and can be installed directly onto mobile devices. For Android users, the app version is available for download.
 
 🌐 Access the Dictionary:
-Explore HazaraMed by visiting [https://hazaramed.netlify.app/](https://hazaramed.netlify.app/).
+Explore HazaraMed by visiting [https://hazaramed.com/](https://hazaramed.com/).
 
 Feel free to contribute to the ongoing development of HazaraMed by requesting new medical terms and translations. Your input is invaluable as we strive to enhance this resource for the Hazaragi-speaking medical community.
