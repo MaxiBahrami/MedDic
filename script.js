@@ -2418,6 +2418,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "pronunciation": "fiʃɑɾ e bolʌnd e doʤuni",
         "definition": "فشار خون بالای حاملگی"
       },
+
       "قآو": {
         "translation": "Condom",
         "pronunciation": "qaw",
@@ -2949,85 +2950,90 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   };
+
+  
   function normalizeInput(input) {
     return input.replace(/آ|ا/g, "ا"); // Normalize 'آ' to 'ا'
-  }
+}
 
-  document.getElementById("word").addEventListener("input", function () {
+document.getElementById("word").addEventListener("input", function () {
     const query = normalizeInput(this.value.trim().toLowerCase());
     const direction = document.getElementById("direction").value;
     const dictionary = translations[direction];
     let matches = Object.keys(dictionary).filter((key) =>
-      normalizeInput(key.toLowerCase()).startsWith(query)
+        normalizeInput(key.toLowerCase()).startsWith(query)
     );
 
     const wordList = document.getElementById("wordList");
     if (query !== "" && matches.length > 0) {
-      wordList.innerHTML = matches
-        .map(
-          (key) =>
-            `<a href="#" class="list-group-item list-group-item-action">${key}</a>`
-        )
-        .join("");
-      wordList.style.display = "block";
+        wordList.innerHTML = matches
+            .map(
+                (key) =>
+                    `<a href="#" class="list-group-item list-group-item-action">${key}</a>`
+            )
+            .join("");
+        wordList.style.display = "block";
     } else {
-      wordList.style.display = "none";
-      wordList.innerHTML = "";
+        wordList.style.display = "none";
+        wordList.innerHTML = "";
     }
-  });
+});
 
-  document.getElementById("wordList").addEventListener("click", function (e) {
+document.getElementById("wordList").addEventListener("click", function (e) {
     if (e.target.tagName === "A") {
-      document.getElementById("word").value = e.target.textContent;
-      translate(e.target.textContent);
-      this.style.display = "none";
+        document.getElementById("word").value = e.target.textContent;
+        translate(e.target.textContent);
+        this.style.display = "none";
     }
-  });
+});
 
-  document.querySelector("button").addEventListener("click", function () {
+document.querySelector("button").addEventListener("click", function () {
     displayTranslations(document.getElementById("word").value);
-  });
+});
 
-  function translate(inputWord) {
+function translate(inputWord) {
     const direction = document.getElementById("direction").value;
     const dictionary = translations[direction];
     const resultElement = document.getElementById("result");
     resultElement.innerHTML = ""; // Clear previous results
 
     let result =
-      dictionary[normalizeInput(inputWord)] ||
-      dictionary[normalizeInput(inputWord.toLowerCase())] ||
-      dictionary[normalizeInput(inputWord.toUpperCase())];
+        dictionary[normalizeInput(inputWord)] ||
+        dictionary[normalizeInput(inputWord.toLowerCase())] ||
+        dictionary[normalizeInput(inputWord.toUpperCase())];
 
     if (result) {
-      if (result.definitions) {
-        result.definitions.forEach((def) => {
-          appendDefinition(resultElement, def);
-          if (def.sound) {
-            appendAudio(resultElement, def.sound);
-          }
-        });
-      } else {
-        appendDefinition(resultElement, result);
-        if (result.sound) {
-          appendAudio(resultElement, result.sound);
+        if (result.definitions) {
+            result.definitions.forEach((def) => {
+                appendDefinition(resultElement, def);
+                if (def.sound) {
+                    appendAudio(resultElement, def.sound);
+                }
+            });
+        } else {
+            appendDefinition(resultElement, result);
+            if (result.sound) {
+                appendAudio(resultElement, result.sound);
+            }
         }
-      }
     } else {
-      resultElement.innerText = "Translation not found.";
+        resultElement.innerText = "Translation not found.";
     }
-  }
+}
 
-  function appendDefinition(container, definition) {
+function appendDefinition(container, definition) {
     const definitionContainer = document.createElement("div");
     definitionContainer.innerHTML = `<b>Translation:</b> ${definition.translation}<br><b>Pronunciation:</b> ${definition.pronunciation}`;
+    if (definition.definition) {
+        definitionContainer.innerHTML += `<br><b>Definition:</b> ${definition.definition}`;
+    }
     if (definition.partOfSpeech) {
-      definitionContainer.innerHTML += `<br><b>Part of Speech:</b> ${definition.partOfSpeech}`;
+        definitionContainer.innerHTML += `<br><b>Part of Speech:</b> ${definition.partOfSpeech}`;
     }
     container.appendChild(definitionContainer);
-  }
+}
 
-  function appendAudio(container, src) {
+function appendAudio(container, src) {
     const audioContainer = document.createElement("div");
     audioContainer.classList.add("audio-container");
     const audioLabel = document.createElement("span");
@@ -3041,5 +3047,5 @@ document.addEventListener("DOMContentLoaded", function () {
     audioContainer.appendChild(audio);
 
     container.appendChild(audioContainer);
-  }
+}
 });
