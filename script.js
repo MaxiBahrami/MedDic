@@ -2953,7 +2953,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   
   function normalizeInput(input) {
-    return input.replace(/آ|ا/g, "ا"); // Normalize 'آ' to 'ا'
+    return input.replace(); // Normalize 'آ' to 'ا'
 }
 
 document.getElementById("word").addEventListener("input", function () {
