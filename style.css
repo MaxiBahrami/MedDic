@@ -541,11 +541,12 @@ body.dark-theme .news-item {
 
 
 #wordList {
+  border-style:groove;
   max-height: 200px; /* You can adjust this value based on your design needs */
   overflow-y: auto; /* Enables vertical scrolling */
   overflow-x: hidden; /* Hides horizontal scrollbar */
+  margin-bottom: 10px;
 }
-
 /* ------------------------------------------------------------------ */
                           /* Footer Style START */
 /* ------------------------------------------------------------------ */
