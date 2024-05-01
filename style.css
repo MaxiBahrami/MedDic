@@ -540,6 +540,11 @@ body.dark-theme .news-item {
 /* ------------------------------------------------------------------ */
 
 
+#wordList {
+  max-height: 200px; /* You can adjust this value based on your design needs */
+  overflow-y: auto; /* Enables vertical scrolling */
+  overflow-x: hidden; /* Hides horizontal scrollbar */
+}
 
 /* ------------------------------------------------------------------ */
                           /* Footer Style START */
