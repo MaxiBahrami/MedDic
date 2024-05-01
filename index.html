@@ -69,8 +69,31 @@
       <li><a href="./about.html">About</a></li>
     </ul>
   </nav>
+  
 
   <!-- Menu END -->
+
+<!-- Modal -->
+<div class="modal fade" id="welcomeModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalLabel">Welcome to HazaraMed</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Discover medical terms with ease. <a href="LINK">Contribute or support us here!</a></p>
+</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
 
 
   <div class="container-fluid mt-4">
@@ -291,7 +314,58 @@
         window.onload = adjustStyle;
         window.onresize = adjustStyle; // Adjusts the layout when the window size changes
       </script>
-
+     
+        <script>
+          document.addEventListener('DOMContentLoaded', function () {
+            var modal = new bootstrap.Modal(document.getElementById('welcomeModal'));
+            
+            // Check if the modal has been shown to the user
+            if (!localStorage.getItem('shownModal')) {
+              modal.show();
+              localStorage.setItem('shownModal', 'true');
+            }
+        
+            var span = document.getElementsByClassName('close')[0];
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            
+            window.onclick = function(event) {
+              if (event.target === modal) {
+                modal.style.display = "none";
+              }
+            }
+        
+            adjustStyle(); // Adjust style based on screen width
+          });
+        
+          function toggleContent() {
+            var content = document.getElementById("toggleContent");
+            var arrow = document.querySelector(".arrow");
+            content.style.display = content.style.display === "block" ? "none" : "block";
+            arrow.innerHTML = content.style.display === "block" ? "&#9650;" : "&#9660;";
+          }
+        
+          function adjustStyle() {
+            var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+            var responsiveContent = document.getElementById("responsiveContent");
+            var leftSide = document.getElementById("leftSide");
+            var rightSide = document.getElementById("rightSide");
+        
+            if (width < 768) { // Adjust for mobile views
+              responsiveContent.style.flexDirection = "column";
+              leftSide.style.maxWidth = "100%";
+              rightSide.style.maxWidth = "100%";
+            } else { // Reset styles for desktop
+              responsiveContent.style.flexDirection = "row";
+              leftSide.style.maxWidth = "80%";
+              rightSide.style.maxWidth = "80%";
+            }
+          }
+        
+          window.onresize = adjustStyle; // Adjusts the layout when the window size changes
+        </script>
+        
 
 
 
