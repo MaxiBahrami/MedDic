@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const translations = {
     englishToHazaragi: {
-                                                    // A
+      // A
       "Abdominal pain": {
         translation: "کَوره دَرد",
         pronunciation: "kʌwrʌ dʌrd",
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
         sound: "./audio/Voice 012.m4a",
       },
 
-                                              // B
+      // B
       Bladder: {
         translation: "شاش دان",
         pronunciation: "ʃʌʃ dan",
@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "Bruise": {
         "translation": "کوفتگی",
         "pronunciation": "kuftʌgi",
-        "sound": "./audio/Voice 024.m4a"
+        "sound": "./audio/words/24 Kooftagi.m4a"
       },
       "Cleft lip": {
         "translation": "قوشی",
@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "translation": "کام چک",
         "pronunciation": "kam ʧak",
         "sound": "./audio/Voice 026.m4a"
-      },   
+      },
 
       Cold: {
         definitions: [
@@ -134,104 +134,42 @@ document.addEventListener("DOMContentLoaded", function () {
             translation: "تَماغُو",
             pronunciation: "tʌmaʁu",
             partOfSpeech: "adjective",
+            "sound": "./audio/Voice 027.m4a"
           },
           {
             translation: "خُونُوکِی",
             pronunciation: "Χunoki",
             partOfSpeech: "noun",
+            "sound": "./audio/Voice 028.m4a"
           },
           {
             translation: "رِیزِش",
             pronunciation: "rizeʃ",
             partOfSpeech: "noun",
+            "sound": "./audio/Voice 029.m4a"
           },
           {
             translation: "زُکام",
             pronunciation: "zokam",
             partOfSpeech: "noun",
-          },
-          {
-            translation: "سَماوِی",
-            pronunciation: "sʌmavi",
-            partOfSpeech: "adjective",
-          },
-          {
-            translation: "سَمایِی",
-            pronunciation: "sʌmaji",
-            partOfSpeech: "adjective",
-          },
-        ],
-      },
-      "Cold 1": {
-        "translation": "تَماغُو",
-        "pronunciation": "kam ʧak",
-        "sound": "./audio/Voice 027.m4a"
-      },  
-      "Cold 2": {
-        "translation": "خُونُوکِی",
-        "pronunciation": "kam ʧak",
-        "sound": "./audio/Voice 028.m4a"
-      }, 
-      "Cold 3": {
-        "translation": "رِیزِش",
-        "pronunciation": "kam ʧak",
-        "sound": "./audio/Voice 029.m4a"
-      }, 
-      ColdMore: {
-        definitions: [
-          {
-            translation: "زُکام",
-            pronunciation: "zokam",
-            partOfSpeech: "noun",
-          },
-          {
-            translation: "سَماوِی",
-            pronunciation: "sʌmavi",
-            partOfSpeech: "adjective",
-          },
-          {
-            translation: "سَمایِی",
-            pronunciation: "sʌmaji",
-            partOfSpeech: "adjective",
-          },
-        ],
-        "sound": "./audio/Voice 030.m4a"
-      },      
+            "sound": "./audio/words/30 zokam.m4a"
 
-      Cold: {
-        definitions: [
-          {
-            translation: "تَماغُو",
-            pronunciation: "tʌmaʁu",
-            partOfSpeech: "adjective",
-          },
-          {
-            translation: "خُونُوکِی",
-            pronunciation: "Χunoki",
-            partOfSpeech: "noun",
-          },
-          {
-            translation: "رِیزِش",
-            pronunciation: "rizeʃ",
-            partOfSpeech: "noun",
-          },
-          {
-            translation: "زُکام",
-            pronunciation: "zokam",
-            partOfSpeech: "noun",
           },
           {
             translation: "سَماوِی",
             pronunciation: "sʌmavi",
             partOfSpeech: "adjective",
+            "sound": "./audio/words/30 samavi.m4a"
           },
           {
             translation: "سَمایِی",
             pronunciation: "sʌmaji",
             partOfSpeech: "adjective",
+            "sound": "./audio/words/24 samayi.m4a"
           },
         ],
       },
+
 
       "Cold and chill": {
         translation: "نزلۀ سرد",
@@ -253,10 +191,12 @@ document.addEventListener("DOMContentLoaded", function () {
           {
             translation: "پیله",
             pronunciation: "pilʌ",
+            "sound": "./audio/words/34 pila.m4a"
           },
           {
             translation: "دیلمه",
             pronunciation: "dilmʌ",
+            "sound": "./audio/words/34 dilma.m4a"
           },
         ],
         "sound": "./audio/Voice 034.m4a"
@@ -299,31 +239,37 @@ document.addEventListener("DOMContentLoaded", function () {
         "sound": "./audio/Voice 039.m4a"
       },
 
-      
+
 
       Diarrhea: {
         definitions: [
           {
             translation: "پِیچ",
             pronunciation: "peʧ",
+            "sound": "./audio/words/.m4a"
           },
           {
             translation: "دَرُو رَو",
             pronunciation: "daru rʌw",
+
+            "sound": "./audio/words/42 darooro.m4a"
+
           },
           {
             translation: "رِیخ‌رَو",
             pronunciation: "riχ rʌw",
+
+            "sound": "./audio/words/42 rikhraw.m4a"
           },
           {
             translation: "شکم‌رَو",
             pronunciation: "ʃikʌm rʌw",
-            "sound": "./audio/Voice 039.m4a"
+            "sound": "./audio/words/42 shikamraw.m4a"
           },
           {
             translation: "قُورَگ",
             pronunciation: "qurʌg",
-            "sound": "./audio/Voice 040.m4a"
+            "sound": "./audio/words/42 ghoorag.m4a"
           },
         ],
       },
@@ -353,10 +299,12 @@ document.addEventListener("DOMContentLoaded", function () {
           {
             translation: "تاو",
             pronunciation: "Taw",
+            "sound": "./audio/words/47 taw.m4a"
           },
           {
             translation: "تِیماو",
             pronunciation: "timʌw",
+            "sound": "./audio/words/47 timaw.m4a"
           },
         ],
       },
@@ -425,7 +373,6 @@ document.addEventListener("DOMContentLoaded", function () {
           },
         ],
       },
-      //... [your existing dictionary entries]
 
       "Inflammation of ulcer": {
         translation: "گَزَگ",
@@ -498,10 +445,12 @@ document.addEventListener("DOMContentLoaded", function () {
           {
             translation: "دَردِ زا",
             pronunciation: "dʌrd e za",
+            "sound": "./audio/words/76 dard e za.m4a"
           },
           {
             translation: "پای گرنگ کدو",
             pronunciation: "paj gʌrnʌg kʌdo",
+            "sound": "./audio/words/76 pay garbage kado.m4a"
           },
         ],
       },
@@ -526,14 +475,19 @@ document.addEventListener("DOMContentLoaded", function () {
           {
             translation: "اشپیش",
             pronunciation: "iʃpiʃ",
+
+            "sound": "./audio/words/81 ishpish.m4a"
           },
           {
             translation: "ریشکک",
             pronunciation: "riʃkʌk",
+
+            "sound": "./audio/words/81 rishkak.m4a"
           },
           {
             translation: "گردگ",
             pronunciation: "gʌrdʌg",
+            "sound": "./audio/words/81 gardag.m4a"
           },
         ],
       },
@@ -542,14 +496,18 @@ document.addEventListener("DOMContentLoaded", function () {
           {
             translation: "زُوف",
             pronunciation: "zuf",
+            "sound": "./audio/words/82 zoof.m4a"
           },
           {
             translation: "گنگاوش",
             pronunciation: "gʌngavoʃ",
+
+            "sound": "./audio/words/82 gangavosh.m4a"
           },
           {
             translation: "بی حال",
             pronunciation: "bihal",
+            "sound": "./audio/words/82 bihal.m4a"
           },
         ],
       },
@@ -558,18 +516,25 @@ document.addEventListener("DOMContentLoaded", function () {
           {
             translation: "کم تول",
             pronunciation: "kʌm tol",
+
+            "sound": "./audio/words/83 Kam tol.m4a"
           },
           {
             translation: "نیلغه ناتو",
             pronunciation: "nilʁe nato",
+
+            "sound": "./audio/words/83 nilqe nato.m4a"
           },
           {
             translation: "نیلغه کم وزن",
             pronunciation: "nilʁe kʌm vʌzn",
+
+
+            "sound": "./audio/words/83 nilqe Kam vazn.m4a"
           },
         ],
       },
-      //... [your existing dictionary entries]
+
 
       "Itchy blister (on children’s skin)": {
         translation: "آتِیشَک‌دَنَه",
@@ -596,14 +561,20 @@ document.addEventListener("DOMContentLoaded", function () {
           {
             translation: "سوء تغذی",
             pronunciation: "suje tʌʁʌzi",
+
+            "sound": "./audio/words/86 sure taqazi.m4a"
           },
           {
             translation: "شِیر سُوخته",
             pronunciation: "ʃir suχtʌ",
+
+            "sound": "./audio/words/86 shir sukhta.m4a"
           },
           {
             translation: "کم واک",
             pronunciation: "kʌm wak",
+
+            "sound": "./audio/words/86 Kam wak.m4a"
           },
         ],
       },
@@ -626,14 +597,20 @@ document.addEventListener("DOMContentLoaded", function () {
           {
             translation: "سرخکو",
             pronunciation: "sorΧvku",
+
+            "sound": "./audio/words/89 sorkhako.m4a"
           },
           {
             translation: "دانه سُرخ‌کُو",
             pronunciation: "dane sorΧvku",
+
+            "sound": "./audio/words/89 Dane sorkhako.m4a"
           },
           {
             translation: "دانه گل",
             pronunciation: "dane gol",
+
+            "sound": "./audio/words/89 Dane gol.m4a"
           },
         ],
       },
@@ -647,14 +624,22 @@ document.addEventListener("DOMContentLoaded", function () {
           {
             translation: "دوا",
             pronunciation: "dʌva",
+
+            "sound": "./audio/words/91 dava.m4a"
           },
           {
             translation: "مرهم",
             pronunciation: "mʌrhʌm",
+
+            "sound": "./audio/words/91 marham.m4a"
+
           },
           {
             translation: "مَلَّم",
             pronunciation: "mʌlʌm",
+
+            "sound": "./audio/words/91 malam.m4a"
+
           },
         ],
       },
@@ -684,22 +669,32 @@ document.addEventListener("DOMContentLoaded", function () {
           {
             translation: "قم ناشته",
             pronunciation: "qʌm naʃtʌ",
+
+            "sound": "./audio/words/96 qam nashta.m4a"
           },
           {
             translation: "کالا بد شدو",
             pronunciation: "kala bʌd ʃudo",
+
+            "sound": "./audio/words/96 Kala bad shudo.m4a"
           },
           {
             translation: "عادت شدو",
             pronunciation: "adʌt ʃudo",
+
+            "sound": "./audio/words/96 Adat shudo.m4a"
           },
           {
             translation: "کمر آمدو",
             pronunciation: "kʌmʌr amʌdo",
+
+            "sound": "./audio/words/96 Kamara amado.m4a"
           },
           {
             translation: "کمروازشدو",
             pronunciation: "kʌmʌr vaz ʃudo",
+
+            "sound": "./audio/words/96 Kamara vaz shudo.m4a"
           },
         ],
       },
@@ -718,14 +713,20 @@ document.addEventListener("DOMContentLoaded", function () {
           {
             translation: "سوا",
             pronunciation: "siva",
+
+            "sound": "./audio/words/99 siva.m4a"
           },
           {
             translation: "سوا کدو",
             pronunciation: "siva kʌdu",
+
+            "sound": "./audio/words/99 Sevastopol kado.m4a"
           },
           {
             translation: "ضایع کدو",
             pronunciation: "zaje kʌdo",
+
+            "sound": "./audio/words/99 Zayed kado.m4a"
           },
         ],
       },
@@ -779,7 +780,6 @@ document.addEventListener("DOMContentLoaded", function () {
         pronunciation: "rʌg bʌ rʌg ʃudo",
         "sound": "./audio/Voice 109.m4a"
       },
-      //... [your existing dictionary entries]
 
       "Nail biting": {
         translation: "ناخن خیدو",
@@ -825,10 +825,15 @@ document.addEventListener("DOMContentLoaded", function () {
           {
             translation: "سرلولو",
             pronunciation: "sʌr lulu",
+
+            "sound": "./audio/words/118 sure looloo.m4a"
           },
           {
             translation: "لولوک",
             pronunciation: "luluk",
+            "sound": "./audio/words/118 loolook.m4a"
+
+
           },
         ],
       },
@@ -892,14 +897,20 @@ document.addEventListener("DOMContentLoaded", function () {
           {
             translation: "جوره",
             pronunciation: "ʤoɾʌ",
+
+            "sound": "./audio/words/130 jora.m4a"
           },
           {
             translation: "همراه طفل",
             pronunciation: "hʌmrah e tefl",
+
+            "sound": "./audio/words/130 hamrahe tefl.m4a"
           },
           {
             translation: "یار",
             pronunciation: "jar",
+
+            "sound": "./audio/words/130 yar.m4a"
           },
         ],
       },
@@ -908,22 +919,33 @@ document.addEventListener("DOMContentLoaded", function () {
           {
             translation: "بَغَلَک",
             pronunciation: "bʌʁʌlʌk",
+
+            "sound": "./audio/words/131 baqalak.m4a"
+
           },
           {
             translation: "بَغَل‌قَپچِی",
             pronunciation: "bʌʁʌl qʌjʧi",
+
+            "sound": "./audio/words/131 baqal qopchi.m4a"
           },
           {
             translation: "بَغَل قَدقُو",
             pronunciation: "bʌʁʌ qʌdqu",
+
+            "sound": "./audio/words/131 baqal qadqu.m4a"
           },
           {
             translation: "چِجِی‌گِیر",
             pronunciation: "ʧeʤi ger",
+
+            "sound": "./audio/words/131 cheji gir.m4a"
           },
           {
             translation: "سِینگِیرِی",
             pronunciation: "sejngirej",
+
+            "sound": "./audio/words/131 singiray.m4a"
           },
         ],
       },
@@ -963,10 +985,14 @@ document.addEventListener("DOMContentLoaded", function () {
           {
             translation: "حامله دار",
             pronunciation: "ɑmilʌdɑɾ",
+            "sound": "./audio/words/139 hameladar.m4a"
+
           },
           {
             translation: "شکم دار",
             pronunciation: "ʃekʌm dar",
+
+            "sound": "./audio/words/139 shekam dar.m4a"
           },
         ],
       },
@@ -990,10 +1016,15 @@ document.addEventListener("DOMContentLoaded", function () {
           {
             translation: "وارنا شدو",
             pronunciation: "wuɾnɑ ʃudo",
+
+            "sound": "./audio/words/143 Vornado shudo.m4a"
           },
           {
             translation: "مجرد شدو",
             pronunciation: "mujʌrʌd ʃudo",
+
+            "sound": "./audio/words/143 mojarad shodo.m4a"
+
           },
         ],
       },
@@ -1056,10 +1087,14 @@ document.addEventListener("DOMContentLoaded", function () {
           {
             translation: "پالو خاوی",
             pronunciation: "palu χɑwi",
+
+            "sound": "./audio/words/154 paloo khawi.m4a"
           },
           {
             translation: "یک جای شدو",
             pronunciation: "jʌk ʤaj ʃudo",
+
+            "sound": "./audio/words/154 yak Jay shodo.m4a"
           },
         ],
       },
@@ -1073,10 +1108,15 @@ document.addEventListener("DOMContentLoaded", function () {
           {
             translation: "دَک‌ خُوردُو",
             pronunciation: "dʌk χurdo",
+
+
+            "sound": "./audio/words/156 Dakota khordo.m4a"
           },
           {
             translation: "دَغدِنَه کدو",
             pronunciation: "dʌʁdinʌ kʌdu",
+
+            "sound": "./audio/words/156 daqdena kado.m4a"
           },
         ],
       },
@@ -1392,10 +1432,14 @@ document.addEventListener("DOMContentLoaded", function () {
           {
             translation: "خرخر کدو",
             pronunciation: "χor χor kʌdo",
+
+            "sound": "./audio/words/212 kher kher kado.m4a"
           },
           {
             translation: "خیش خیش چجی",
             pronunciation: "χiʃ χiʃ ʧeʤi",
+
+            "sound": "./audio/words/212 khesh khesh e cheji.m4a"
           },
         ],
       },
@@ -2712,7 +2756,7 @@ document.addEventListener("DOMContentLoaded", function () {
       },
 
       //
-      
+
       "ماینه تلوزونی": {
         "translation": "Ultrasound",
         "pronunciation": "majne telvizuni",
@@ -2951,89 +2995,89 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   };
 
-  
+
   function normalizeInput(input) {
     return input.replace(); // Normalize 'آ' to 'ا'
-}
+  }
 
-document.getElementById("word").addEventListener("input", function () {
+  document.getElementById("word").addEventListener("input", function () {
     const query = normalizeInput(this.value.trim().toLowerCase());
     const direction = document.getElementById("direction").value;
     const dictionary = translations[direction];
     let matches = Object.keys(dictionary).filter((key) =>
-        normalizeInput(key.toLowerCase()).startsWith(query)
+      normalizeInput(key.toLowerCase()).startsWith(query)
     );
 
     const wordList = document.getElementById("wordList");
     if (query !== "" && matches.length > 0) {
-        wordList.innerHTML = matches
-            .map(
-                (key) =>
-                    `<a href="#" class="list-group-item list-group-item-action">${key}</a>`
-            )
-            .join("");
-        wordList.style.display = "block";
+      wordList.innerHTML = matches
+        .map(
+          (key) =>
+            `<a href="#" class="list-group-item list-group-item-action">${key}</a>`
+        )
+        .join("");
+      wordList.style.display = "block";
     } else {
-        wordList.style.display = "none";
-        wordList.innerHTML = "";
+      wordList.style.display = "none";
+      wordList.innerHTML = "";
     }
-});
+  });
 
-document.getElementById("wordList").addEventListener("click", function (e) {
+  document.getElementById("wordList").addEventListener("click", function (e) {
     if (e.target.tagName === "A") {
-        document.getElementById("word").value = e.target.textContent;
-        translate(e.target.textContent);
-        this.style.display = "none";
+      document.getElementById("word").value = e.target.textContent;
+      translate(e.target.textContent);
+      this.style.display = "none";
     }
-});
+  });
 
-document.querySelector("button").addEventListener("click", function () {
+  document.querySelector("button").addEventListener("click", function () {
     displayTranslations(document.getElementById("word").value);
-});
+  });
 
-function translate(inputWord) {
+  function translate(inputWord) {
     const direction = document.getElementById("direction").value;
     const dictionary = translations[direction];
     const resultElement = document.getElementById("result");
     resultElement.innerHTML = ""; // Clear previous results
 
     let result =
-        dictionary[normalizeInput(inputWord)] ||
-        dictionary[normalizeInput(inputWord.toLowerCase())] ||
-        dictionary[normalizeInput(inputWord.toUpperCase())];
+      dictionary[normalizeInput(inputWord)] ||
+      dictionary[normalizeInput(inputWord.toLowerCase())] ||
+      dictionary[normalizeInput(inputWord.toUpperCase())];
 
     if (result) {
-        if (result.definitions) {
-            result.definitions.forEach((def) => {
-                appendDefinition(resultElement, def);
-                if (def.sound) {
-                    appendAudio(resultElement, def.sound);
-                }
-            });
-        } else {
-            appendDefinition(resultElement, result);
-            if (result.sound) {
-                appendAudio(resultElement, result.sound);
-            }
+      if (result.definitions) {
+        result.definitions.forEach((def) => {
+          appendDefinition(resultElement, def);
+          if (def.sound) {
+            appendAudio(resultElement, def.sound);
+          }
+        });
+      } else {
+        appendDefinition(resultElement, result);
+        if (result.sound) {
+          appendAudio(resultElement, result.sound);
         }
+      }
     } else {
-        resultElement.innerText = "Translation not found.";
+      resultElement.innerText = "Translation not found.";
     }
-}
+  }
 
-function appendDefinition(container, definition) {
+  function appendDefinition(container, definition) {
     const definitionContainer = document.createElement("div");
     definitionContainer.innerHTML = `<b>Translation:</b> ${definition.translation}<br><b>Pronunciation:</b> ${definition.pronunciation}`;
     if (definition.definition) {
-        definitionContainer.innerHTML += `<br><b>Definition:</b> ${definition.definition}`;
+      definitionContainer.innerHTML += `<br><b>Definition:</b> ${definition.definition}`;
     }
     if (definition.partOfSpeech) {
-        definitionContainer.innerHTML += `<br><b>Part of Speech:</b> ${definition.partOfSpeech}`;
+      definitionContainer.innerHTML += `<br><b>Part of Speech:</b> ${definition.partOfSpeech}`;
     }
     container.appendChild(definitionContainer);
-}
+  }
 
-function appendAudio(container, src) {
+  function appendAudio(container, src) {
     const audioContainer = document.createElement("div");
     audioContainer.classList.add("audio-container");
     const audioLabel = document.createElement("span");
@@ -3047,5 +3091,5 @@ function appendAudio(container, src) {
     audioContainer.appendChild(audio);
 
     container.appendChild(audioContainer);
-}
+  }
 });
