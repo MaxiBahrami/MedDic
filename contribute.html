@@ -14,36 +14,70 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <style>
-        #dictionary-title {
-            font-size: 2.5em;
-            color: #333;
-            text-align: center;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-        #submit-form, #error-form, #feedback-form {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        input[type="text"], textarea, input[type="submit"] {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-sizing: border-box;
-        }
-        input[type="submit"] {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        input[type="submit"]:hover {
-            background-color: #45a049;
-        }
+        /* General styles and responsiveness for the title */
+#dictionary-title {
+    font-size: 2.5em; /* Adaptive font size for different devices */
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Nunito', sans-serif; /* Using a more readable font */
+}
+
+/* Responsive form container */
+#submit-form, #error-form, #feedback-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1); /* Adding a subtle shadow for depth */
+    border-radius: 8px; /* Soften the corners */
+}
+
+/* Styles for text inputs and textareas */
+input[type="text"], textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em; /* Making text size responsive */
+}
+
+/* Style modifications for submit buttons */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for buttons */
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Media queries for better responsiveness on smaller devices */
+@media (max-width: 768px) {
+    #dictionary-title {
+        font-size: 2em; /* Smaller font size on smaller screens */
+    }
+
+    #submit-form, #error-form, #feedback-form {
+        max-width: 90%;
+        margin: 10px auto;
+    }
+
+    input[type="text"], textarea, input[type="submit"] {
+        padding: 10px;
+    }
+}
+
     </style>
 </head>
 <body>
